@@ -89,6 +89,7 @@
   &__logo {
     &-img {
       width: 25px;
+      object-fit: contain;
     }
     &-container {
       display: flex;
