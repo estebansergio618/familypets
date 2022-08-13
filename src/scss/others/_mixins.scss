@@ -1,0 +1,40 @@
+@mixin button {
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(41, 73, 89);
+  background: linear-gradient(to left, rgb(20, 23, 38), rgb(41, 73, 89));
+  cursor: pointer;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  outline: none;
+  text-transform: uppercase;
+  border: solid 2px rgb(41, 73, 89);
+  transition: 0.2s;
+}
+@mixin shadow {
+  box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.23);
+}
+
+@mixin shake-animation {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(0);
+  }
+  30% {
+    transform: rotate(20deg);
+  }
+  60% {
+    transform: rotate(0);
+  }
+  90% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
