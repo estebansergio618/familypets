@@ -1,18 +1,39 @@
-@mixin button {
+@mixin button{
   border-radius: 5px;
-  color: white;
-  background-color: rgb(41, 73, 89);
-  background: linear-gradient(to left, rgb(20, 23, 38), rgb(41, 73, 89));
   cursor: pointer;
-  border: none;
   padding: 10px 15px;
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: bold;
   outline: none;
+  border: none;
   text-transform: uppercase;
-  border: solid 2px rgb(41, 73, 89);
   transition: 0.2s;
 }
+@mixin button-gradient {
+  @include button;
+  color: $white;
+  background: linear-gradient(to left, $darker-main-color, $main-color);
+  text-transform: uppercase;
+  border: 1px solid $main-color;
+  &:hover {
+    color: $main-color;
+    background: $white;
+  }
+}
+
+@mixin button-white {
+  @include button;
+  color: $main-color;
+  background-color: $white;
+  text-transform: uppercase;
+  border: none;
+  &:hover {
+    color: $white;
+    background: $main-color;
+    border: 1px solid $white;
+  }
+}
+
 @mixin shadow {
   box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.23);
 }
