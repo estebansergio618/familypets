@@ -7,9 +7,11 @@
     background-color: $main-color;
     padding: 10px $main-padding;
     height: 150px;
+    text-align: center
   }
   &__button {
     @include button-white;
+    padding: 0 15px;
     height: fit-content;
   }
   &__content {

@@ -4,7 +4,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 200px;
+    min-height: 200px;
+    text-align: center;
+    padding: $main-padding;
   }
   &__title {
     font-size: 2.5rem;
@@ -20,6 +22,7 @@
   }
   &__h2 {
     color: $main-color;
+    margin-bottom: 20px;
   }
   &__text {
     text-align: left;
@@ -27,23 +30,42 @@
   }
   &__button {
     @include button-gradient;
+    margin-top: 20px;
     width: fit-content;
   }
   &__img {
-    height: 500px;
+    min-height: 500px;
+   min-width: 50vw;
+    display: block;
     background-image: url("../../images/cat.jpg");
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
   }
   &__info {
-    display: grid;
-    gap: 2.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(60vw, auto));
+    // display: grid;
+    // min-height: 500px;
+    // grid-template-columns: 1fr 0.4fr;
+    // @media (max-width: 768px){
+    //   grid-template-columns: 1fr;
+    //   grid-template-rows: auto auto;
+    //   background-color: red;
+    // }
+    display: flex;
   }
   &__right {
     display: flex;
+    padding: 1vh $main-padding 1vh 1vw;
     flex-direction: column;
     justify-content: space-around;
   }
+   @media (max-width: 768px){
+     &__info {
+       flex-direction: column;
+     }
+     &__right {
+       padding: $main-padding;
+     }
+    }
 }
+

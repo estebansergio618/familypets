@@ -1,5 +1,6 @@
 .footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 30px $main-padding;
@@ -14,5 +15,9 @@
   }
   &__link {
     color: $white;
+  }
+  @media (max-width: 768px){
+    padding: 0 $main-padding;
+    justify-content: center;
   }
 }

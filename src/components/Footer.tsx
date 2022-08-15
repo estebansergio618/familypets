@@ -4,20 +4,20 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__left">
-        <h3>Datos de Contacto</h3>
+        <p className="footer__text">Datos de Contacto</p>
         <a
           className="footer__link"
           href="https://wa.me/51937871113"
           target="_blank"
         >
-          <h4>WhatsApp +51 993 485 130</h4>
+          <p className="footer__text">WhatsApp +51 993 485 130</p>
         </a>
         <a
           className="footer__link"
           href="mailto:clinicafamilypets@gmail.com"
           target="_blank"
         >
-          clinicafamilypets@gmail.com
+          <p className="footer__text">clinicafamilypets@gmail.com</p>
         </a>
       </div>
       <div className="footer__right">

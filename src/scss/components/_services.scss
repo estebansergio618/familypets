@@ -1,5 +1,5 @@
 .services {
-  padding-bottom: 50px;
+  padding:  $main-padding;
   &__title {
     font-size: 2.5rem;
   }
@@ -9,13 +9,13 @@
     align-content: center;
     flex-wrap: wrap;
     gap: 1rem;
-    padding: 0 $main-padding;
   }
   &__text {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
-    margin: 90px 0;
+    margin-bottom: 30px;
+    text-align: center;
   }
 }
