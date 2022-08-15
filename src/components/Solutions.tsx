@@ -44,7 +44,7 @@ const Solutions = () => {
         </div>
         <div className="solutions__cards">
           {cardInfo.map(card => (
-            <Card card={card} />
+            <Card card={card} key={card.title}/>
           ))}
         </div>
       </div>

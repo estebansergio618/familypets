@@ -1,4 +1,4 @@
-@mixin button{
+@mixin button {
   border-radius: 5px;
   cursor: pointer;
   padding: 10px 15px;
@@ -36,6 +36,9 @@
 
 @mixin shadow {
   box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.23);
+}
+@mixin strong-shadow {
+  box-shadow: 0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%);
 }
 
 @mixin shake-animation {

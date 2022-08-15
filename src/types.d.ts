@@ -3,4 +3,5 @@ export interface CardInterface {
   title: string;
   description: string;
   button: string;
+  mini?: boolean;
 }

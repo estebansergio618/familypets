@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px $main-padding;
+  height: 150px;
+  color: $white;
+  background: linear-gradient(to left, $darker-main-color, $main-color);
+  &__logo{
+    width: 100px;
+  }
+  &__left {
+    font-weight: 600;
+  }
+  &__link {
+    color: $white;
+  }
+}
