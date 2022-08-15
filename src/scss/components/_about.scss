@@ -31,15 +31,15 @@
   }
   &__img {
     height: 500px;
-    background-image: url("../../images/maxresdefault.jpg");
-    background-position: center;
+    background-image: url("../../images/cat.jpg");
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
   }
   &__info {
     display: grid;
     gap: 2.5rem;
-    grid-template-columns: 1fr 0.5fr;
+    grid-template-columns: repeat(auto-fit, minmax(60vw, auto));
   }
   &__right {
     display: flex;

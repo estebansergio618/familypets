@@ -4,10 +4,13 @@
   gap: 1rem;
   min-height: 100vh;
   padding: 0 $main-padding;
-  background-image: linear-gradient(rgba(26, 33, 29, 0.42), rgba(26, 33, 29, 0.42)), url("../../images/puppies-wallpaper.jpg");
+  background-image: linear-gradient(rgba(26, 33, 29, 0.42), rgba(26, 33, 29, 0.42)), url("../../images/lab1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
+  @media (max-width: 768px) {
+    background-image: linear-gradient(rgba(26, 33, 29, 0.42), rgba(26, 33, 29, 0.42)), url("../../images/lab2.jpg");
+  }
   &__button {
     @include button-gradient;
     &-left {
