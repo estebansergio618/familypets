@@ -1,0 +1,53 @@
+.solutions {
+  color: $white;
+  &__separator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $main-color;
+    padding: 10px $main-padding;
+    height: 150px;
+  }
+  &__button {
+    @include button-white;
+    height: fit-content;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 80vh;
+    padding: 10px $main-padding;
+    background-image: linear-gradient(
+        $transparent-main-color,
+        $transparent-main-color
+      ),
+      url("../../images/puppy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
+  &__title {
+    color: $white;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+  }
+  &__subtitle {
+    color: $white;
+    max-width: 600px;
+    font-weight: 600;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+}

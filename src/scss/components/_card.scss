@@ -1,0 +1,53 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 480px;
+  width: 380px;
+  border-radius: 5px;
+  background-color: $white;
+  transition: 0.2s;
+  &__title {
+    color: $main-color;
+  }
+  &__button {
+    @include button-gradient;
+  }
+  &__description {
+    color: $text-gray;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  &__bars {
+    &-top {
+      width: 70px;
+      height: 3px;
+      border-radius: 50px;
+      margin: 0 auto;
+      background-color: $main-color;
+    }
+    &-bottom {
+      width: 45px;
+      height: 3px;
+      border-radius: 25px;
+      margin: 10px auto;
+      background-color: $main-color;
+    }
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    width: 93px;
+    height: 93px;
+    border: none;
+    background-color: $main-color;
+    background: linear-gradient(to left, $main-color, $darker-main-color);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+}
