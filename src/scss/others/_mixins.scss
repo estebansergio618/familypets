@@ -34,6 +34,19 @@
   }
 }
 
+@mixin button-transparent {
+  @include button;
+  color: $white;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 1px solid $white;
+  &:hover {
+    color: $main-color;
+    background: $white;
+    border: none;
+  }
+}
+
 @mixin shadow {
   box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.23);
 }
