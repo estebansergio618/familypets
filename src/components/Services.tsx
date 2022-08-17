@@ -13,8 +13,8 @@ const Services = () => {
     },
     {
       icon: "cut",
-      title: "Estética",
-      description: "Servicio de corte y estética.",
+      title: "Higiene y Estética",
+      description: "Servicio de baño, corte y estética.",
       button: "Saber Más",
       mini: true,
     },
