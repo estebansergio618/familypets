@@ -40,25 +40,3 @@
 @mixin strong-shadow {
   box-shadow: 0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%);
 }
-
-@mixin shake-animation {
-  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-}
-
-@keyframes shake {
-  10% {
-    transform: rotate(0);
-  }
-  30% {
-    transform: rotate(20deg);
-  }
-  60% {
-    transform: rotate(0);
-  }
-  90% {
-    transform: rotate(20deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}

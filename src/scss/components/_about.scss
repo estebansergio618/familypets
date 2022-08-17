@@ -43,14 +43,6 @@
     background-repeat: no-repeat;
   }
   &__info {
-    // display: grid;
-    // min-height: 500px;
-    // grid-template-columns: 1fr 0.4fr;
-    // @media (max-width: 768px){
-    //   grid-template-columns: 1fr;
-    //   grid-template-rows: auto auto;
-    //   background-color: red;
-    // }
     display: flex;
   }
   &__right {

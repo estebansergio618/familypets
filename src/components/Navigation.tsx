@@ -1,23 +1,24 @@
 import React, { useState } from "react";
-import logo from "../images/logo.png"
+import logo from "../images/logo.png";
+import Hamburger from "./Hamburger";
 const Navigation = () => {
-  const [navOnTop, setNavOnTop] = useState<boolean>(true)
+  const [navOnTop, setNavOnTop] = useState<boolean>(true);
   const changeNav = (): void => {
-    if(window.scrollY <= 90) {
-      setNavOnTop(true)
+    if (window.scrollY <= 90) {
+      setNavOnTop(true);
     } else {
-      setNavOnTop(false)
+      setNavOnTop(false);
     }
-  }
+  };
 
-  window.addEventListener("scroll", changeNav)
+  window.addEventListener("scroll", changeNav);
 
   return (
     <nav className={navOnTop ? "navigation" : "navigation navigation-alt"}>
       <div className="navigation__title">
         <p>Clinica Veterinaria</p>
         <div className="navigation__logo-container">
-          <img className="navigation__logo-img" src={logo}/>
+          <img className="navigation__logo-img" src={logo} alt="Family Pets" />
           <h1 className="navigation__logo-text">Family Pets</h1>
         </div>
       </div>
@@ -42,6 +43,7 @@ const Navigation = () => {
           </ul>
         </li>
       </ul>
+      <Hamburger/>
     </nav>
   );
 };
