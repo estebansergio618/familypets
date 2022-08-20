@@ -36,15 +36,15 @@ const Solutions = () => {
       </div>
       <div className="solutions__content">
         <div className="solutions__text">
-        <h2 className="solutions__title">¡Adaptados para tus necesidades!</h2>
-        <p className="solutions__subtitle">
-          Las mejores soluciones pensadas para tu comodidad, descubre lo que
-          podemos hacer por ti y tu mascota.
-        </p>
+          <h2 className="solutions__title">¡Adaptados para tus necesidades!</h2>
+          <p className="solutions__subtitle">
+            Las mejores soluciones pensadas para tu comodidad, descubre lo que
+            podemos hacer por ti y tu mascota.
+          </p>
         </div>
         <div className="solutions__cards">
-          {cardInfo.map(card => (
-            <Card card={card} key={card.title}/>
+          {cardInfo.map((card) => (
+            <Card card={card} key={card.title} />
           ))}
         </div>
       </div>
