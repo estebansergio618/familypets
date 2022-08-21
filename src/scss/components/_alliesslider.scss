@@ -1,0 +1,27 @@
+.allies {
+
+  background-color: $blueberry;
+  padding: 30px $main-padding;
+  &__logo {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  &__h2 {
+    color: $white;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  &__slider {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  &__image {
+    max-width: 100px;
+  }
+}
+
