@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../images/logo.png";
+import logo from "../assets/images/logo.png";
 import Hamburger from "./Hamburger";
 const Navigation = () => {
   const [navOnTop, setNavOnTop] = useState<boolean>(true);

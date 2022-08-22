@@ -1,15 +1,15 @@
 import React from "react";
 import Slider from "react-slick";
-import clubWulf from "../images/clubwuf.png";
-import ncibau from "../images/ncibau.png";
-import ndental from "../images/ndental.png";
-import nfisiovet from "../images/nfisiovet.png";
-import nhills from "../images/nhills.png";
-import nkoning from "../images/nkoning.png";
-import nmio from "../images/nmio.png";
-import npetid from "../images/npetid.png";
-import nvetlife from "../images/nvetlife.png";
-import nvetoch from "../images/nvetoch.png";
+import clubWulf from "../assets/images/clubwuf.png";
+import ncibau from "../assets/images/ncibau.png";
+import ndental from "../assets/images/ndental.png";
+import nfisiovet from "../assets/images/nfisiovet.png";
+import nhills from "../assets/images/nhills.png";
+import nkoning from "../assets/images/nkoning.png";
+import nmio from "../assets/images/nmio.png";
+import npetid from "../assets/images/npetid.png";
+import nvetlife from "../assets/images/nvetlife.png";
+import nvetoch from "../assets/images/nvetoch.png";
 
 const AlliesSlider = () => {
   var settings = {

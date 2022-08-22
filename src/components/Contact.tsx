@@ -45,7 +45,7 @@ const Contact = () => {
             <MapContainer
               center={[-12.167292980976022, -76.99066279052947]}
               zoom={23}
-              scrollWheelZoom={false}
+              scrollWheelZoom={true}
               style={{ width: "100%", height: "100%" }}
             >
               <TileLayer

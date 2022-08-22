@@ -2,7 +2,7 @@
   display: flex;
   position: fixed;
   transition: 0.2s;
-  z-index: 2;
+  z-index: 1500; // z-index alto porque el mapa viene con un z-index de 1000 por defecto y lo tapa
   width: 100%;
   justify-content: space-between;
   align-items: center;
