@@ -1,6 +1,6 @@
 import React from 'react';
 import About from './components/About';
-import AlliesSlider from './components/AlliesSlider';
+import Brands from './components/Brands';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
@@ -17,7 +17,7 @@ function App() {
       <About/>
       <Solutions/>
       <Services/>
-      <AlliesSlider/>
+      <Brands/>
       <Contact/>
       <Footer/>
     </div>

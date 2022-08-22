@@ -11,7 +11,7 @@ import npetid from "../assets/images/npetid.png";
 import nvetlife from "../assets/images/nvetlife.png";
 import nvetoch from "../assets/images/nvetoch.png";
 
-const AlliesSlider = () => {
+const Brands = () => {
   var settings = {
     dots: false,
     infinite: true,
@@ -53,27 +53,27 @@ const AlliesSlider = () => {
     ],
   };
   return (
-    <div className="allies">
-      <img className="allies__logo" src={clubWulf} alt="club wulf logo" />
-      <h2 className="allies__h2">
+    <div className="brands">
+      <img className="brands__logo" src={clubWulf} alt="club wulf logo" />
+      <h2 className="brands__h2">
         {" "}
         NUESTROS ALIADOS EN LA SALUD DE TU MASCOTA{" "}
       </h2>
-      <div className="allies__slider">
+      <div className="brands__slider">
         <Slider {...settings}>
-          <img className="allies__image" src={ncibau} alt="cibau logo" />
-          <img className="allies__image" src={ndental} alt="dental logo" />
-          <img className="allies__image" src={nfisiovet} alt="fisiovet logo" />
-          <img className="allies__image" src={nhills} alt="hills logo" />
-          <img className="allies__image" src={nkoning} alt="koning logo" />
-          <img className="allies__image" src={nmio} alt="mio logo" />
-          <img className="allies__image" src={npetid} alt="petid logo" />
-          <img className="allies__image" src={nvetlife} alt="vetlife logo" />
-          <img className="allies__image" src={nvetoch} alt="vetoch logo" />
+          <img className="brands__image" src={ncibau} alt="cibau logo" />
+          <img className="brands__image" src={ndental} alt="dental logo" />
+          <img className="brands__image" src={nfisiovet} alt="fisiovet logo" />
+          <img className="brands__image" src={nhills} alt="hills logo" />
+          <img className="brands__image" src={nkoning} alt="koning logo" />
+          <img className="brands__image" src={nmio} alt="mio logo" />
+          <img className="brands__image" src={npetid} alt="petid logo" />
+          <img className="brands__image" src={nvetlife} alt="vetlife logo" />
+          <img className="brands__image" src={nvetoch} alt="vetoch logo" />
         </Slider>
       </div>
     </div>
   );
 };
 
-export default AlliesSlider;
+export default Brands;
