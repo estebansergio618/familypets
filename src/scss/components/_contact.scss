@@ -60,6 +60,8 @@
     justify-content: space-between;
     gap: 1rem;
     padding: $main-padding;
+    background-image: linear-gradient($transparent-white, $transparent-white),
+      url("../../assets/images/map.png");
   }
   &__card {
     display: flex;
@@ -74,6 +76,7 @@
     position: relative;
     width: fit-content;
     max-width: 90vw;
+    @include strong-shadow;
     @media (max-width: 476px) {
       gap: 8px;
       padding: 8px 8px;
@@ -117,9 +120,21 @@
     height: 100%;
     width: 100%;
   }
-}
-.map {
-  background-color: red;
-  height: 50vh;
-  width: 1000px;
+  &__social {
+    display: flex;
+    align-self: flex-start;
+    width: 100%;
+    max-width: 320px;
+    justify-content: space-between;
+    &-logo {
+      width: 40px;
+    }
+    &-link {
+      transition: $bezier;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.3);
+      }
+    }
+  }
 }

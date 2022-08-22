@@ -1,6 +1,8 @@
 import React from "react";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-
+import wsp from "../assets/icons/whatsapp.svg";
+import fb from "../assets/icons/facebook.svg";
+import inst from "../assets/icons/instagram.svg";
 const Contact = () => {
   return (
     <>
@@ -9,6 +11,8 @@ const Contact = () => {
           <div className="contact__info">
             <p className="contact__title">Contacta con nosotros</p>
             <p className="contact__text">
+              <b>Atendemos todos los días de 07:00 a 00:00</b>
+              <br />
               Siéntete libre de entrar en contacto con cualquier duda o
               sugerencia que tengas.
             </p>
@@ -27,11 +31,10 @@ const Contact = () => {
                 map
               </span>
               <p>
-                Av. Guardia Civil Sur 600
+                Jiron Guardia Civil Sur 500
                 <br />
-                Piso 1<br />
-                Lima 15056
-                <br />
+                Mz B Lot 4 <br />
+                Santiago de Surco 15054
               </p>
             </div>
             <div className="contact__card">
@@ -39,6 +42,41 @@ const Contact = () => {
                 mail
               </span>
               <p>clinicafamilypets@gmail.com</p>
+            </div>
+            <div className="contact__social">
+              <a
+                className="contact__social-link"
+                href="https://wa.me/51993485130"
+                target="_blank"
+              >
+                <img
+                  className="contact__social-logo"
+                  src={wsp}
+                  alt="whatsapp icono"
+                />
+              </a>
+              <a
+                className="contact__social-link"
+                href="https://www.facebook.com/clinicafamilypets/"
+                target="_blank"
+              >
+                <img
+                  className="contact__social-logo"
+                  src={fb}
+                  alt="facebook icono"
+                />
+              </a>
+              <a
+                className="contact__social-link"
+                href="https://instagram.com/vet.familypets?igshid=1d2zjz5s718oj "
+                target="_blank"
+              >
+                <img
+                  className="contact__social-logo"
+                  src={inst}
+                  alt="instagram icono"
+                />
+              </a>
             </div>
           </div>
           <div className="contact__map">
@@ -53,9 +91,7 @@ const Contact = () => {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               />
               <Marker position={[-12.167292980976022, -76.99066279052947]}>
-                <Popup>
-                Clínica veterinaria Family Pets
-                </Popup>
+                <Popup>Clínica veterinaria Family Pets</Popup>
               </Marker>
             </MapContainer>
           </div>
