@@ -8,15 +8,15 @@ import "./scss/main.scss";
 function App() {
   return (
     <div className="App">
-      <Navigation />
       <BrowserRouter>
+      <Navigation />
         <Routes>
           <Route path="*" element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="/nosotros" element={<AboutUs />} />
         </Routes>
-      </BrowserRouter>
       <Footer />
+      </BrowserRouter>
     </div>
   );
 }

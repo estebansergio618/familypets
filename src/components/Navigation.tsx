@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 import Hamburger from "./Hamburger";
 const Navigation = () => {
@@ -23,27 +24,59 @@ const Navigation = () => {
         </div>
       </div>
       <ul className="navigation__nav">
-        <li className="navigation__nav-list" data-location="/#">Inicio</li>
-        <li className="navigation__nav-list navigation__nav-list-sub" data-location="/nosotros#">
+        <li className="navigation__nav-list" data-location="/#">
+          Inicio
+        </li>
+        <li
+          className="navigation__nav-list navigation__nav-list-sub"
+          data-location="/nosotros#"
+        >
           Nosotros
           <ul className="navigation__subnav">
-            <li className="navigation__subnav-list" data-location="/nosotros#">¿Quienes Somos?</li>
-            <li className="navigation__subnav-list" data-location="/nosotros#team">Equipo</li>
-            <li className="navigation__subnav-list" data-location="/nosotros#services">Servicios</li>
-            <li className="navigation__subnav-list" data-location="blog.familypets.pe">Blog</li>
+            <li data-location="/nosotros#">
+              <Link className="navigation__subnav-list" to="/nosotros">
+                ¿Quienes Somos?
+              </Link>
+            </li>
+            <li
+              className="navigation__subnav-list"
+              data-location="/nosotros#team"
+            >
+              Equipo
+            </li>
+            <li
+              className="navigation__subnav-list"
+              data-location="/nosotros#services"
+            >
+              Servicios
+            </li>
+            <li
+              className="navigation__subnav-list"
+              data-location="blog.familypets.pe"
+            >
+              Blog
+            </li>
           </ul>
         </li>
-        <li className="navigation__nav-list" data-location="/shop">Agenda Tu Cita</li>
-        <li className="navigation__nav-list" data-location="/#map">Contacto</li>
+        <li className="navigation__nav-list" data-location="/shop">
+          Agenda Tu Cita
+        </li>
+        <li className="navigation__nav-list" data-location="/#map">
+          Contacto
+        </li>
         <li className="navigation__nav-list">
           Laboratorio
           <ul className="navigation__subnav">
-            <li className="navigation__subnav-list" data-location="/signUp">Registrarse</li>
-            <li className="navigation__subnav-list" data-location="/signIn">Iniciar Sesion</li>
+            <li className="navigation__subnav-list" data-location="/signUp">
+              Registrarse
+            </li>
+            <li className="navigation__subnav-list" data-location="/signIn">
+              Iniciar Sesion
+            </li>
           </ul>
         </li>
       </ul>
-      <Hamburger/>
+      <Hamburger />
     </nav>
   );
 };
