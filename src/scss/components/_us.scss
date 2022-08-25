@@ -1,48 +1,82 @@
-.us{
+.us {
   &__hero {
     min-height: 50vh;
-    background-image: linear-gradient(rgba(26, 33, 29, 0.42), rgba(26, 33, 29, 0.42)), url("../../assets/images/vetdog2.jpg");
+    background-image: linear-gradient(
+        rgba(26, 33, 29, 0.42),
+        rgba(26, 33, 29, 0.42)
+      ),
+      url("../../assets/images/vetdog2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
     max-width: 100%;
     position: relative;
-    // background: #2c3e50;
-    // height: 50vh;
     border-bottom-left-radius: 50% 10%;
     border-bottom-right-radius: 50% 10%;
   }
-  &__presentation{
+  &__presentation {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    // min-height: 30vh;
     padding: 5vh;
     text-align: center;
   }
-  &__text{
+  &__text {
     color: $text-gray;
     font-size: 1.3rem;
     margin-top: 25px;
+    text-align: justify;
+    &--overflow {
+      text-overflow: ellipsis;
+      content: "";
+      background: -webkit-linear-gradient(#000, #fff);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
   &__h2 {
     color: $main-color;
     font-size: 2rem;
     font-weight: 400;
+    margin-top: 35px;
+    text-align: left;
   }
-  &__card{
-    display: flex;
-    &-reverse {
-     flex-direction: row-reverse;
-    }
-    align-items: center;
+  &__card {
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.2s;
+    @include shadow;
   }
-  &__image{
-    // width: 100%;
+  &__image {
+    width: 30vw;
+    min-width: 200px;
     max-width: 400px;
+    float: left;
+    shape-outside: circle();
+    &-reverse {
+      float: right;
+    }
+    @media (max-width: 400px){
+      display: block;
+      float: none;
+      margin: 0 auto;
+    }
   }
   &__values {
     padding: $main-padding;
   }
+  &__button {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    background: none;
+    color: $main-color;
+    @include button;
+    border: 1px solid $main-color;
+    font-weight: 500;
+  }
 }
+
