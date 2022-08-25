@@ -1,25 +1,22 @@
-import React from 'react';
-import About from './components/About';
-import Brands from './components/Brands';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import Navigation from './components/Navigation';
-import Services from './components/Services';
-import Solutions from './components/Solutions';
-import "./scss/main.scss"
-
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer";
+import Navigation from "./components/Navigation";
+import AboutUs from "./pages/AboutUs";
+import Home from "./pages/Home";
+import "./scss/main.scss";
 function App() {
   return (
     <div className="App">
-      <Navigation/>
-      <Hero/>
-      <About/>
-      <Solutions/>
-      <Services/>
-      <Brands/>
-      <Contact/>
-      <Footer/>
+      <Navigation />
+      <BrowserRouter>
+        <Routes>
+          <Route path="*" element={<Home />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/nosotros" element={<AboutUs />} />
+        </Routes>
+      </BrowserRouter>
+      <Footer />
     </div>
   );
 }
