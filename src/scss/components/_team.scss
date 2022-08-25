@@ -1,5 +1,4 @@
 .team {
-  padding-bottom: 50px;
   &__presentation {
     display: flex;
     flex-direction: column;
@@ -83,7 +82,3 @@
     @include button-gradient;
   }
 }
-
-// .slick-track {
-//   margin:auto;
-// }
