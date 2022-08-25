@@ -12,7 +12,7 @@ import nvetlife from "../assets/images/nvetlife.png";
 import nvetoch from "../assets/images/nvetoch.png";
 
 const Brands = () => {
-  var settings = {
+  const settings = {
     dots: false,
     infinite: true,
     speed: 1000,
