@@ -45,29 +45,53 @@ const Card = ({ card }: Props) => {
     }
   }, []);
 
-  return card.mini ? (
-    <div className="card--mini" ref={cardRef}>
-      <span className="card--mini__icon material-symbols-outlined">
-        {card.icon}
-      </span>
-      <div className="card--mini-right">
-        <h4 className="card--mini__title">{card.title}</h4>
-        <p className="card--mini__description">{card.description}</p>
-        <button className="card--mini__button">{card.button}</button>
+  if (card.type === "outline") {
+    return (
+      <div className="servicesextended__card-container">
+        <div className="servicesextended__card" style={{border:`2px solid ${card.color}`}}>
+          <span className="servicesextended__card-icon material-symbols-outlined" style={{color:`${card.color}`}}>
+          {card.icon}
+          </span>
+          <p className="servicesextended__card-title" style={{color:`${card.color}`}}>{card.title}</p>
+          <p className="servicesextended__card-text">
+          {card.description}
+          </p>
+          <button className="servicesextended__card-button" style={{color:`${card.color}`, border:`1px solid ${card.color}`}}>
+            {card.button ? card.button : "SABER MÁS"}
+            <span className="material-symbols-outlined">chevron_right</span>
+          </button>
+        </div>
       </div>
-    </div>
-  ) : (
-    <div className="card">
-      <span className="card__icon material-symbols-outlined">{card.icon}</span>
-      <h2 className="card__title">{card.title}</h2>
-      <div className="card__bars">
-        <div className="card__bars-top" />
-        <div className="card__bars-bottom" />
+    );
+  } else if (card.type === "mini") {
+    return (
+      <div className="card--mini" ref={cardRef}>
+        <span className="card--mini__icon material-symbols-outlined">
+          {card.icon}
+        </span>
+        <div className="card--mini-right">
+          <h4 className="card--mini__title">{card.title}</h4>
+          <p className="card--mini__description">{card.description}</p>
+          <button className="card--mini__button">{card.button}</button>
+        </div>
       </div>
-      <p className="card__description">{card.description}</p>
-      <button className="card__button">{card.button}</button>
-    </div>
-  );
+    );
+  } else {
+    return (
+      <div className="card">
+        <span className="card__icon material-symbols-outlined">
+          {card.icon}
+        </span>
+        <h2 className="card__title">{card.title}</h2>
+        <div className="card__bars">
+          <div className="card__bars-top" />
+          <div className="card__bars-bottom" />
+        </div>
+        <p className="card__description">{card.description}</p>
+        <button className="card__button">{card.button}</button>
+      </div>
+    );
+  }
 };
 
 export default Card;

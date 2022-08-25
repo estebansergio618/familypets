@@ -2,6 +2,7 @@ export interface CardInterface {
   icon: string;
   title: string;
   description: string;
-  button: string;
-  mini?: boolean;
+  button?: string;
+  type?: string,
+  color?: string;
 }

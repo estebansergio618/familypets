@@ -1,0 +1,74 @@
+import React from "react";
+import { CardInterface } from "../types";
+import Card from "./Card";
+const ServicesExtended = () => {
+  const outlineCardInfo: CardInterface[] = [
+    {
+      icon: "healing",
+      title: "Clínica",
+      description:
+        "El mejor servicio de clínica para su mascota, desde consultas hasta hospitalizaciones y operaciones.",
+      color: "#42b7ca",
+      type: "outline",
+    },
+    {
+      icon: "cut",
+      title: "Grooming",
+      description:
+        "Nuestros profesionales de la higiene canina son los mejores, harán sentir a tu mascota espectacular.",
+      color: "#425fca",
+      type: "outline",
+    },
+    {
+      icon: "cottage",
+      title: "Hospedaje",
+      description:
+        "Un hospedaje como el hogar, seguro tu mascota adorará estar con nosotros mientras tienes que irte de viaje.",
+      color: "#9c42ca",
+      type: "outline",
+    },
+    {
+      icon: "luggage",
+      title: "Traslado",
+      description:
+        "¿Quieres viajar o trasladar a tu mascota? Perfecto, tenemos lo que buscas, ¡Sin problemas! ¡Sin retrasos!.",
+      color: "#C94254",
+      type: "outline",
+    },
+    {
+      icon: "memory",
+      title: "ChipID",
+      description:
+        "Nuestro nuevo servicio de implantación de chips te permite identificar a tu mascota globalmente. Los chips de nuestro proveedor petID son de la mejor calidad y están certificados a nivel mundial. ¡La seguridad es primero!",
+      color: "#40C989",
+      type: "outline",
+    },
+    {
+      icon: "science",
+      title: "Laboratorio en Línea",
+      description:
+        "Realiza los exámenes de tu mascota en nuestra clínica y chequea sus resultados en nuestra web desde cualquier parte del mundo.",
+      color: "#C98940",
+      type: "outline",
+      button: "Entrar"
+    },
+  ];
+  return (
+    <section className="servicesextended">
+      <div className="servicesextended__presentation">
+        <h2 className="servicesextended__h2">Servicios</h2>
+        <p className="servicesextended__text">
+          Ofrecemos los servicios de más alta calidad para que tú y tus mascotas
+          no tengan de nada porque preocuparse.
+        </p>
+      </div>
+      <div className="servicesextended__card-container">
+      {outlineCardInfo.map((card) => (
+          <Card card={card} key={card.title} />
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default ServicesExtended;
