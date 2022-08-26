@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a3714255.css",
+    "main.js": "/static/js/main.d345473c.js",
+    "static/media/cat.jpg": "/static/media/cat.d373a59a861781f83f5e.jpg",
+    "static/media/vetdog2.jpg": "/static/media/vetdog2.f78973383de6a936b6eb.jpg",
+    "static/media/trigo.jpg": "/static/media/trigo.f23355b5928595d2be24.jpg",
+    "static/media/lab1.jpg": "/static/media/lab1.d33a304fef9521ec6fb4.jpg",
+    "static/media/lab2.jpg": "/static/media/lab2.bb43f7e3b68952e20aa0.jpg",
+    "static/media/bg-map.png": "/static/media/bg-map.6f5bb24a6728bf43623e.png",
+    "static/media/circlecat.png": "/static/media/circlecat.f7b2c5b9524fc25c8597.png",
+    "static/media/circledog.png": "/static/media/circledog.2e6578f0f7fde28fee78.png",
+    "static/media/pin2.jpeg": "/static/media/pin2.6e04e3643b09ba71165d.jpeg",
+    "static/media/parallaxpattern.png": "/static/media/parallaxpattern.945782ad2365b7554c2d.png",
+    "static/media/map.png": "/static/media/map.433e0a7e9413e13640d3.png",
+    "static/media/ncibau.png": "/static/media/ncibau.4e5789876b02653c39f8.png",
+    "static/media/ndental.png": "/static/media/ndental.245885c5d1e1ed635aec.png",
+    "static/media/nmio.png": "/static/media/nmio.bc1c148baafc5d18bc68.png",
+    "static/media/nvetlife.png": "/static/media/nvetlife.d45bedc8bb7d4ffef9e9.png",
+    "static/media/nhills.png": "/static/media/nhills.4a4a25b9d783925c8435.png",
+    "static/media/logo.png": "/static/media/logo.5a0e5712b60931ec0b0a.png",
+    "static/media/nfisiovet.png": "/static/media/nfisiovet.bc12373c3a1229150804.png",
+    "static/media/nvetoch.png": "/static/media/nvetoch.5c088ce402cf732599a2.png",
+    "static/media/clubwuf.png": "/static/media/clubwuf.57fb2e3d2bb2cb2eebae.png",
+    "static/media/martin.webp": "/static/media/martin.80837b8a0741eab1476d.webp",
+    "static/media/wendy.webp": "/static/media/wendy.fa547dc2aa38d4087f52.webp",
+    "static/media/denis.webp": "/static/media/denis.e3f5c42b6fcc38673520.webp",
+    "static/media/nkoning.png": "/static/media/nkoning.9965787f187f6b139732.png",
+    "static/media/npetid.png": "/static/media/npetid.3f36339d8457d29d731d.png",
+    "index.html": "/index.html",
+    "static/media/whatsapp.svg": "/static/media/whatsapp.22bb12a038db478cef5ac8e4020fab1e.svg",
+    "static/media/instagram.svg": "/static/media/instagram.882dbaeadb51a76e68da0e25ebdd40bc.svg",
+    "static/media/facebook.svg": "/static/media/facebook.dd884b95e949a0b04bfe3e5f866f708a.svg",
+    "main.a3714255.css.map": "/static/css/main.a3714255.css.map",
+    "main.d345473c.js.map": "/static/js/main.d345473c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3714255.css",
+    "static/js/main.d345473c.js"
+  ]
+}
