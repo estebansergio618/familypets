@@ -1,8 +1,17 @@
-import React from "react";
 import { CardInterface } from "../types";
 import Card from "./Card";
+import React, { useRef, useState } from "react";
 
 const Solutions = () => {
+  const [scrollY, setScrollY] = useState<number>(0);
+  const parRef = useRef<HTMLDivElement>(null);
+
+  const changeScroll = (): void => {
+    if (parRef.current != undefined && parRef.current != null) {
+      setScrollY(parRef.current.offsetTop - window.scrollY);
+    }
+  };
+  window.addEventListener("scroll", changeScroll);
   const cardInfo: CardInterface[] = [
     {
       icon: "local_shipping",
@@ -25,7 +34,7 @@ const Solutions = () => {
       title: "El mejor equipo",
       description: "Un equipo de profesionales en los que puedes confiar.",
       button: "conócenos",
-      route: "/nosotros"
+      route: "/nosotros",
     },
   ];
   return (
@@ -39,7 +48,11 @@ const Solutions = () => {
           <button className="solutions__button">AGENDA TU CITA</button>
         </a>
       </div>
-      <div className="solutions__content">
+      <div
+        className="solutions__content"
+        ref={parRef}
+        style={{ backgroundPositionY: `${-scrollY / 5}px` }}
+      >
         <div className="solutions__text">
           <h2 className="solutions__title">¡Adaptados para tus necesidades!</h2>
           <p className="solutions__subtitle">

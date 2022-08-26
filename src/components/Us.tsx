@@ -1,12 +1,25 @@
-import React, { useState } from "react";
 import circleDog from "../assets/images/circledog.png";
 import circleCat from "../assets/images/circlecat.png";
+import React, { useRef, useState } from "react";
+
 const Us = () => {
+  const [scrollY, setScrollY] = useState<number>(0);
+  const parRef = useRef<HTMLDivElement>(null);
+
+  const changeScroll = (): void => {
+    if (parRef.current != undefined && parRef.current != null) {
+      setScrollY(parRef.current.offsetTop - window.scrollY);
+    }
+  };
+  window.addEventListener("scroll", changeScroll);
   const [showMore, setShowMore] = useState<boolean>(false);
-  const text: string = `s`;
   return (
     <section className="us">
-      <div className="us__hero" />
+      <div
+        className="us__hero"
+        ref={parRef}
+        style={{ backgroundPosition: `center ${-scrollY / 3}px` }}
+      />
       <div className="us__presentation">
         <h2 className="us__h2">¿Quiénes Somos?</h2>
         <p className="us__text">
