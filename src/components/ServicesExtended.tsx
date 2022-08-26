@@ -83,6 +83,7 @@ const ServicesExtended = () => {
         "Nuestro nuevo servicio de implantación de chips te permite identificar a tu mascota globalmente. Los chips de nuestro proveedor petID son de la mejor calidad y están certificados a nivel mundial. ¡La seguridad es primero!",
       color: "#40C989",
       type: "outline",
+      route:"/#contacto",
     },
     {
       icon: "science",
@@ -92,6 +93,7 @@ const ServicesExtended = () => {
       color: "#C98940",
       type: "outline",
       button: "Entrar",
+      route:"/#inicio",
     },
   ];
   return (

@@ -69,20 +69,39 @@ const Card = ({ card }: Props) => {
             {card.title}
           </p>
           <p className="servicesextended__card-text">{card.description}</p>
-          <button
-            className="servicesextended__card-button"
-            onClick={() => setOpenModal(true)}
-            style={{
-              color: `${card.color}`,
-              border: `1px solid ${card.color}`,
-            }}
-          >
-            {card.button ? card.button : "SABER MÁS"}
-            <span className="material-symbols-outlined">chevron_right</span>
-          </button>
+          {card.route ? (
+            <a
+              href={card.route}
+              className="servicesextended__card-button"
+              // onClick={() => setOpenModal(true)}
+              style={{
+                color: `${card.color}`,
+                border: `1px solid ${card.color}`,
+              }}
+            >
+              {card.button ? card.button : "SABER MÁS"}
+              {/* <span className="material-symbols-outlined">chevron_right</span> */}
+            </a>
+          ) : (
+            <button
+              className="servicesextended__card-button"
+              onClick={() => setOpenModal(true)}
+              style={{
+                color: `${card.color}`,
+                border: `1px solid ${card.color}`,
+              }}
+            >
+              {card.button ? card.button : "SABER MÁS"}
+              <span className="material-symbols-outlined">chevron_right</span>
+            </button>
+          )}
         </div>
         {openModal && card.subservices ? (
-          <ServicesModal card={card} key={card.title} setOpenModal={setOpenModal} />
+          <ServicesModal
+            card={card}
+            key={card.title}
+            setOpenModal={setOpenModal}
+          />
         ) : null}
       </div>
     );
