@@ -7,14 +7,14 @@
   justify-content: space-between;
   align-items: center;
   color: $white;
-  padding: 30px $main-padding;
+  padding: 20px 1vw;
   &-alt {
     background-color: $main-color;
-    padding: 20px 1vw;
+    padding: 10px $main-padding;
   }
   &__nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     max-width: 1000px;
     @media (max-width: 768px) {
@@ -103,13 +103,14 @@
       display: flex;
     }
     &-text {
+      white-space: nowrap;
       font-size: 2rem;
       margin-left: 20px;
       font-weight: 300;
     }
   }
   &__title {
-    text-align: left;
+    text-align: center;
     transition: 0.5s;
     &:hover {
       letter-spacing: 0.2rem;

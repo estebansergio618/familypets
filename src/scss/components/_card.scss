@@ -77,7 +77,8 @@
       align-items: center;
       width: 93px;
       height: 93px;
-      background: linear-gradient(to left, $darker-main-color, $main-color);
+      // background: linear-gradient(to left, $darker-main-color, $main-color);
+      background-color: $white;
       border-radius: 50px;
       font-size: 50px;
       color: $main-color;
