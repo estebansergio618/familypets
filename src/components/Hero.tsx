@@ -7,12 +7,20 @@ const Hero = () => {
   const changeScroll = (): void => {
     setScrollY(window.scrollY);
   };
-  
+
   window.addEventListener("scroll", changeScroll);
   return (
-    <div className="hero" style={{backgroundPosition:`center ${scrollY/3}px`}}>
-      <button className="hero__button hero__button-left">CONTACTO</button>
-      <button className="hero__button">AGENDA TU CITA</button>
+    <div
+      className="hero"
+      style={{ backgroundPosition: `center ${scrollY / 3}px` }}
+      id="inicio"
+    >
+      <a href="#contacto">
+        <button className="hero__button hero__button-left">CONTACTO</button>
+      </a>
+      <a href="#contacto">
+        <button className="hero__button">AGENDA TU CITA</button>
+      </a>
     </div>
   );
 };

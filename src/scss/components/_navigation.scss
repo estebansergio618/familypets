@@ -17,7 +17,7 @@
     justify-content: space-between;
     width: 100%;
     max-width: 1000px;
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
       display: none;
     }
     &-list {
@@ -32,6 +32,10 @@
       border-radius: 5px;
       position: relative;
       transition: $fast-bezier;
+      text-decoration: none;
+      &:visited {
+        color: $white;
+      }
       &:hover,
       &:focus,
       &:active {
@@ -78,6 +82,10 @@
       color: $main-color;
       padding: 10px 10px;
       transition: $bezier;
+      text-decoration: none;
+      &:visited {
+        color: $main-color;
+      }
       &:hover {
         background-color: $main-color;
         color: white;
@@ -104,7 +112,7 @@
     text-align: left;
     transition: 0.5s;
     &:hover {
-      letter-spacing: .2rem;
+      letter-spacing: 0.2rem;
       cursor: pointer;
       & > .navigation__logo-container > .navigation__logo-img {
         @include shake-animation;

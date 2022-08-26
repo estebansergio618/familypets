@@ -48,7 +48,7 @@ const Services = () => {
     },
   ];
   return (
-    <section className="services">
+    <section className="services" id="servicios">
       <div className="services__text">
         <p className="services__title">Nuestros Servicios</p>
         <p className="services__subtitle">

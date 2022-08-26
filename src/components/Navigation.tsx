@@ -24,53 +24,49 @@ const Navigation = () => {
         </div>
       </div>
       <ul className="navigation__nav">
-        <li className="navigation__nav-list" data-location="/#">
-          Inicio
+        <li>
+          <a className="navigation__nav-list" href="/#inicio">
+            Inicio
+          </a>
         </li>
-        <li
-          className="navigation__nav-list navigation__nav-list-sub"
-          data-location="/nosotros#"
-        >
+        <li className="navigation__nav-list navigation__nav-list-sub">
           Nosotros
           <ul className="navigation__subnav">
-            <li data-location="/nosotros#">
-              <Link className="navigation__subnav-list" to="/nosotros">
+            <li>
+              <a className="navigation__subnav-list" href="/nosotros">
                 ¿Quienes Somos?
-              </Link>
+              </a>
             </li>
-            <li
-              className="navigation__subnav-list"
-              data-location="/nosotros#team"
-            >
-              Equipo
+            <li>
+              <a className="navigation__subnav-list" href="/nosotros#equipo">
+                Equipo
+              </a>
             </li>
-            <li
-              className="navigation__subnav-list"
-              data-location="/nosotros#services"
-            >
-              Servicios
+            <li>
+              <a className="navigation__subnav-list" href="#servicios">
+                Servicios
+              </a>
             </li>
-            <li
-              className="navigation__subnav-list"
-              data-location="blog.familypets.pe"
-            >
-              Blog
-            </li>
+            {/* <li className="navigation__subnav-list">Blog</li> */}
           </ul>
         </li>
-        <li className="navigation__nav-list" data-location="/shop">
+        <li>
+        <a className="navigation__nav-list" href="/#contacto">
           Agenda Tu Cita
+        </a>
         </li>
-        <li className="navigation__nav-list" data-location="/#map">
-          Contacto
+        <li>
+          <a className="navigation__nav-list" href="/#contacto">
+            Contacto
+          </a>
         </li>
         <li className="navigation__nav-list">
           Laboratorio
           <ul className="navigation__subnav">
-            <li className="navigation__subnav-list" data-location="/signUp">
+            <li className="navigation__subnav-list">
               Registrarse
             </li>
-            <li className="navigation__subnav-list" data-location="/signIn">
+            <li className="navigation__subnav-list">
               Iniciar Sesion
             </li>
           </ul>

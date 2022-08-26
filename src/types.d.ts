@@ -3,6 +3,8 @@ export interface CardInterface {
   title: string;
   description: string;
   button?: string;
-  type?: string,
+  type?: string;
   color?: string;
+  route?: string;
+  subservices?: string[];
 }

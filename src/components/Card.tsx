@@ -1,5 +1,6 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { CardInterface } from "../types";
+import { ServicesModal } from "./ServicesModal";
 
 interface Props {
   card: CardInterface;
@@ -7,7 +8,10 @@ interface Props {
 
 const Card = ({ card }: Props) => {
   const cardRef = useRef<HTMLDivElement>(null);
-
+  const [openModal, setOpenModal] = useState<boolean>(false);
+  const handleModal = (): void => {
+    setOpenModal(!openModal);
+  };
   useEffect(() => {
     // this block is for animation
     if (cardRef.current != undefined && cardRef.current != null) {
@@ -48,19 +52,38 @@ const Card = ({ card }: Props) => {
   if (card.type === "outline") {
     return (
       <div className="servicesextended__card-container">
-        <div className="servicesextended__card" style={{border:`2px solid ${card.color}`}}>
-          <span className="servicesextended__card-icon material-symbols-outlined" style={{color:`${card.color}`}}>
-          {card.icon}
+        <div
+          className="servicesextended__card"
+          style={{ border: `2px solid ${card.color}` }}
+        >
+          <span
+            className="servicesextended__card-icon material-symbols-outlined"
+            style={{ color: `${card.color}` }}
+          >
+            {card.icon}
           </span>
-          <p className="servicesextended__card-title" style={{color:`${card.color}`}}>{card.title}</p>
-          <p className="servicesextended__card-text">
-          {card.description}
+          <p
+            className="servicesextended__card-title"
+            style={{ color: `${card.color}` }}
+          >
+            {card.title}
           </p>
-          <button className="servicesextended__card-button" style={{color:`${card.color}`, border:`1px solid ${card.color}`}}>
+          <p className="servicesextended__card-text">{card.description}</p>
+          <button
+            className="servicesextended__card-button"
+            onClick={() => setOpenModal(true)}
+            style={{
+              color: `${card.color}`,
+              border: `1px solid ${card.color}`,
+            }}
+          >
             {card.button ? card.button : "SABER MÁS"}
             <span className="material-symbols-outlined">chevron_right</span>
           </button>
         </div>
+        {openModal && card.subservices ? (
+          <ServicesModal card={card} key={card.title} setOpenModal={setOpenModal} />
+        ) : null}
       </div>
     );
   } else if (card.type === "mini") {
@@ -72,7 +95,9 @@ const Card = ({ card }: Props) => {
         <div className="card--mini-right">
           <h4 className="card--mini__title">{card.title}</h4>
           <p className="card--mini__description">{card.description}</p>
-          <button className="card--mini__button">{card.button}</button>
+          <a href="/nosotros#servicios">
+            <button className="card--mini__button">{card.button}</button>
+          </a>
         </div>
       </div>
     );
@@ -88,7 +113,9 @@ const Card = ({ card }: Props) => {
           <div className="card__bars-bottom" />
         </div>
         <p className="card__description">{card.description}</p>
-        <button className="card__button">{card.button}</button>
+        <a href={card.route}>
+          <button className="card__button">{card.button}</button>
+        </a>
       </div>
     );
   }

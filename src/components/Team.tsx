@@ -34,7 +34,7 @@ const Team = () => {
     ],
   };
   return (
-    <section className="team">
+    <section className="team" id="equipo">
       <div className="team__presentation">
         <h2 className="team__h2">¡Conoce a Nuestra Familia!</h2>
         <p className="team__text">
@@ -84,7 +84,9 @@ const Team = () => {
       </div>
       <div className="team__contact">
         <p className="team__text">¿Quieres formar parte? ¡Contáctanos!</p>
+        <a href="/#contacto">
         <button className="team__button">CONTACTO</button>
+        </a>
       </div>
     </section>
   );

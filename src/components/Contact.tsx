@@ -6,7 +6,7 @@ import inst from "../assets/icons/instagram.svg";
 const Contact = () => {
   return (
     <>
-      <section className="contact">
+      <section className="contact" id="contacto">
         <div className="contact__wrapper">
           <div className="contact__info">
             <p className="contact__title">Contacta con nosotros</p>

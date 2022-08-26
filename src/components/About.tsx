@@ -9,7 +9,7 @@ const About = () => {
         <p className="about__subtitle">Family Pets</p>
       </div>
       <div className="about__info">
-        <span className="about__img"/>
+        <span className="about__img" />
         <div className="about__right">
           <h2 className="about__h2">¿Quiénes somos?</h2>
           <p className="about__text">
@@ -28,7 +28,9 @@ const About = () => {
             salud de sus mascotas y nuestra misión es ofrecer solamente la
             atención de más alto estándar.
           </p>
-          <button className="about__button">SABER MÁS</button>
+          <a href="/nosotros">
+            <button className="about__button">SABER MÁS</button>
+          </a>
         </div>
       </div>
     </section>

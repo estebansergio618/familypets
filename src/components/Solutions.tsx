@@ -10,6 +10,7 @@ const Solutions = () => {
       description:
         "Servicio de delivery eficiente para el transporte de su mascota.",
       button: "Agenda tu cita",
+      route: "#contacto",
     },
     {
       icon: "schedule",
@@ -17,12 +18,14 @@ const Solutions = () => {
       description:
         "Servicio de emergencias y líneas de atención disponibles 24/7.",
       button: "Necesito Ayuda",
+      route: "#contacto",
     },
     {
       icon: "group",
       title: "El mejor equipo",
       description: "Un equipo de profesionales en los que puedes confiar.",
       button: "conócenos",
+      route: "/nosotros"
     },
   ];
   return (
@@ -32,7 +35,9 @@ const Solutions = () => {
           <h2 className="solutions__h2">VISÍTANOS JUNTO A TU PEQUEÑO</h2>
           <p>Reserva en segundos</p>
         </div>
-        <button className="solutions__button">AGENDA TU CITA</button>
+        <a href="#contacto">
+          <button className="solutions__button">AGENDA TU CITA</button>
+        </a>
       </div>
       <div className="solutions__content">
         <div className="solutions__text">

@@ -10,6 +10,16 @@ const ServicesExtended = () => {
         "El mejor servicio de clínica para su mascota, desde consultas hasta hospitalizaciones y operaciones.",
       color: "#42b7ca",
       type: "outline",
+      subservices: [
+        "Fisioterapia",
+        "Hospitalización",
+        "Cirugías",
+        "Profilaxis",
+        "Desparacitación Interna y externa",
+        "Ecografías",
+        "Radiografías",
+        "Análisis y Pruebas Diagnósticas",
+      ],
     },
     {
       icon: "cut",
@@ -18,6 +28,22 @@ const ServicesExtended = () => {
         "Nuestros profesionales de la higiene canina son los mejores, harán sentir a tu mascota espectacular.",
       color: "#425fca",
       type: "outline",
+      subservices: [
+        "Agua temperada",
+        "Secado temperado",
+        "Baño Medicado",
+        "Limpieza de oídos",
+        "Limpieza de glándulas",
+        "Corte y limado de uñas",
+        "Cepillado y peinado",
+        "Moñito o cinta decorativa",
+        " Perfumado",
+        "Corte de pelo",
+        "Corte higiénico",
+        "Retoque de cara",
+        "Corte de raza",
+        "Rapado",
+      ],
     },
     {
       icon: "cottage",
@@ -26,6 +52,14 @@ const ServicesExtended = () => {
         "Un hospedaje como el hogar, seguro tu mascota adorará estar con nosotros mientras tienes que irte de viaje.",
       color: "#9c42ca",
       type: "outline",
+      subservices: [
+        "Kennel Propio",
+        "Paseos",
+        "Comidas",
+        "Juegos",
+        "Baño",
+        "Seguridad",
+      ],
     },
     {
       icon: "luggage",
@@ -34,6 +68,13 @@ const ServicesExtended = () => {
         "¿Quieres viajar o trasladar a tu mascota? Perfecto, tenemos lo que buscas, ¡Sin problemas! ¡Sin retrasos!.",
       color: "#C94254",
       type: "outline",
+      subservices: [
+        "Seguridad",
+        "Rapidez",
+        "Comodidad",
+        "Solución de Tramites",
+        "ChipID",
+      ],
     },
     {
       icon: "memory",
@@ -50,11 +91,11 @@ const ServicesExtended = () => {
         "Realiza los exámenes de tu mascota en nuestra clínica y chequea sus resultados en nuestra web desde cualquier parte del mundo.",
       color: "#C98940",
       type: "outline",
-      button: "Entrar"
+      button: "Entrar",
     },
   ];
   return (
-    <section className="servicesextended">
+    <section className="servicesextended" id="servicios">
       <div className="servicesextended__presentation">
         <h2 className="servicesextended__h2">Servicios</h2>
         <p className="servicesextended__text">
@@ -63,7 +104,7 @@ const ServicesExtended = () => {
         </p>
       </div>
       <div className="servicesextended__card-container">
-      {outlineCardInfo.map((card) => (
+        {outlineCardInfo.map((card) => (
           <Card card={card} key={card.title} />
         ))}
       </div>
