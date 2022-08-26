@@ -30,6 +30,9 @@
     background-color: $white;
     @include sidebar-open-animation;
     &-list {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
       text-transform: uppercase;
       font-weight: 600;
       cursor: pointer;
@@ -85,6 +88,8 @@
     @include dropdown-animation;
     transition: 0.5s;
     &-list {
+      display: flex;
+      width: 100%;
       text-align: center;
       color: $main-color;
       padding: 10px 10px;

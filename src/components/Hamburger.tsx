@@ -45,8 +45,14 @@ const Hamburger = () => {
                 close
               </button>
             </li>
-            <li className="hamburger__nav-list" data-location="/#">
-              Inicio
+            <li>
+              <a
+                className="hamburger__nav-list"
+                href="/#inicio"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Inicio
+              </a>
             </li>
             <li
               className="hamburger__nav-list"
@@ -66,40 +72,60 @@ const Hamburger = () => {
               </div>
               {isAboutUsOpen ? (
                 <ul className="hamburger__subnav">
-                  <li
-                    className="hamburger__subnav-list"
-                    data-location="/nosotros#"
-                  >
-                    ¿Quienes Somos?
+                  <li>
+                    <a
+                      className="hamburger__subnav-list"
+                      href="/nosotros"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      ¿Quienes Somos?
+                    </a>
                   </li>
-                  <li
-                    className="hamburger__subnav-list"
-                    data-location="/nosotros#team"
-                  >
-                    Equipo
+                  <li>
+                    <a
+                      className="hamburger__subnav-list"
+                      href="/nosotros#equipo"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Equipo
+                    </a>
                   </li>
-                  <li
-                    className="hamburger__subnav-list"
-                    data-location="/nosotros#services"
-                  >
-                    Servicios
+                  <li>
+                    <a
+                      className="hamburger__subnav-list"
+                      href="#servicios"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Servicios
+                    </a>
                   </li>
-                  <li
+                  {/* <li
                     className="hamburger__subnav-list"
-                    data-location="blog.familypets.pe"
                   >
                     Blog
-                  </li>
+                  </li> */}
                 </ul>
               ) : null}
             </li>
-            <li className="hamburger__nav-list" data-location="/shop">
-              Agenda Tu Cita
+            <li>
+              <a
+                className="hamburger__nav-list"
+                href="/#contacto"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Agenda Tu Cita
+              </a>
             </li>
-            <li className="hamburger__nav-list" data-location="/#map">
-              Contacto
+            <li>
+              <a
+                className="hamburger__nav-list"
+                href="/#contacto"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contacto
+              </a>
             </li>
-            <li
+            {/* <li
               className="hamburger__nav-list"
               onClick={() => setIsLabOpen(!isLabOpen)}
             >
@@ -119,19 +145,18 @@ const Hamburger = () => {
                 <ul className="hamburger__subnav">
                   <li
                     className="hamburger__subnav-list"
-                    data-location="/signUp"
+                  
                   >
                     Registrarse
                   </li>
                   <li
                     className="hamburger__subnav-list"
-                    data-location="/signIn"
                   >
                     Iniciar Sesion
                   </li>
                 </ul>
               ) : null}
-            </li>
+            </li> */}
           </ul>
         </div>
       ) : null}

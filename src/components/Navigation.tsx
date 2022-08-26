@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 import Hamburger from "./Hamburger";
 const Navigation = () => {
@@ -60,7 +59,7 @@ const Navigation = () => {
             Contacto
           </a>
         </li>
-        <li className="navigation__nav-list">
+        {/* <li className="navigation__nav-list">
           Laboratorio
           <ul className="navigation__subnav">
             <li className="navigation__subnav-list">
@@ -70,7 +69,7 @@ const Navigation = () => {
               Iniciar Sesion
             </li>
           </ul>
-        </li>
+        </li> */}
       </ul>
       <Hamburger />
     </nav>
