@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React, {useState } from "react";
 import background from "../images/lab1.jpg";
 import background2 from "../images/lab2.jpg";
 const Hero = () => {
   const [scrollY, setScrollY] = useState<number>(0);
+
 
   const changeScroll = (): void => {
     setScrollY(window.scrollY);
   };
 
   window.addEventListener("scroll", changeScroll);
+
   return (
     <div
       className="hero"

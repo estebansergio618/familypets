@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../assets/images/logo.png";
 import Hamburger from "./Hamburger";
 const Navigation = () => {
@@ -12,7 +12,9 @@ const Navigation = () => {
   };
 
   window.addEventListener("scroll", changeNav);
-
+  useEffect(() => {
+    console.log("rerender");
+  }, []);
   return (
     <nav className={navOnTop ? "navigation" : "navigation navigation-alt"}>
       <div className="navigation__title">
@@ -50,9 +52,9 @@ const Navigation = () => {
           </ul>
         </li>
         <li>
-        <a className="navigation__nav-list" href="/#contacto">
-          Agenda Tu Cita
-        </a>
+          <a className="navigation__nav-list" href="/#contacto">
+            Agenda Tu Cita
+          </a>
         </li>
         <li>
           <a className="navigation__nav-list" href="/#contacto">

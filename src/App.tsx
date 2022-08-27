@@ -5,18 +5,19 @@ import Navigation from "./components/Navigation";
 import AboutUs from "./pages/AboutUs";
 import Home from "./pages/Home";
 import "./scss/main.scss";
+
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-      <Navigation />
-        <Routes>
-          <Route path="*" element={<Home />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/nosotros" element={<AboutUs />} />
-        </Routes>
-      <Footer />
-      </BrowserRouter>
+        <BrowserRouter>
+          <Navigation />
+          <Routes>
+            <Route path="*" element={<Home />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/nosotros" element={<AboutUs />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
     </div>
   );
 }
