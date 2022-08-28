@@ -1,6 +1,8 @@
-import circleDog from "../assets/images/circledog.png";
-import circleCat from "../assets/images/circlecat.png";
 import React, { useRef, useState } from "react";
+import circleDog from "../assets/images/circledog.png";
+import circleDog2 from "../assets/images/circledog2.png";
+import circleCat from "../assets/images/circlecat.png";
+import circleCat2 from "../assets/images/circlecat2.png";
 
 const Us = () => {
   const [scrollY, setScrollY] = useState<number>(0);
@@ -63,7 +65,7 @@ const Us = () => {
         <div className="us__card">
           {/* <div className="us__info"> */}
           <h3 className="us__h2">Valores</h3>
-          <img className="us__image" src={circleDog} alt="dog" />
+          <img className="us__image us__image-border" src={circleDog2} alt="dog" />
           <p className={showMore ? "us__text" : "us__text us__text--overflow"}>
             Los valores éticos y profesionales son muy importante para nosotros
             entre los que podemos mencionar: <br />
@@ -113,8 +115,8 @@ const Us = () => {
           {/* <div className="us__info"> */}
           <h3 className="us__h2">Política de calidad</h3>
           <img
-            className="us__image us__image-reverse"
-            src={circleCat}
+            className="us__image us__image-reverse us__image-border"
+            src={circleCat2}
             alt="dog"
           />
           <p className="us__text">

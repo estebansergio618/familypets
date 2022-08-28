@@ -56,6 +56,9 @@
     max-width: 400px;
     float: left;
     shape-outside: circle();
+    &-border {
+      border: 20px solid $white;
+    }
     &-reverse {
       float: right;
     }
