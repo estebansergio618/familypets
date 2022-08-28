@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
-import circleDog from "../assets/images/circledog.png";
-import circleDog2 from "../assets/images/circledog2.png";
-import circleCat from "../assets/images/circlecat.png";
-import circleCat2 from "../assets/images/circlecat2.png";
+import circleDog from "../assets/images/circledog.webp";
+import circleDog2 from "../assets/images/circledog2.webp";
+import circleCat from "../assets/images/circlecat.webp";
+import circleCat2 from "../assets/images/circlecat2.webp";
 
 const Us = () => {
   const [scrollY, setScrollY] = useState<number>(0);

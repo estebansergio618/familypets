@@ -1,5 +1,5 @@
 import React from "react";
-import clubWulf from "../assets/images/clubwuf.png";
+import clubWulf from "../assets/images/clubwuf.webp";
 const Footer = () => {
   return (
     <footer className="footer">

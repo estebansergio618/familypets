@@ -4,12 +4,12 @@
   gap: 1rem;
   min-height: 100vh;
   padding: 0 $main-padding;
-  background-image: linear-gradient(rgba(26, 33, 29, 0.42), rgba(26, 33, 29, 0.42)), url("../../assets/images/lab1.jpg");
+  background-image: linear-gradient(rgba(26, 33, 29, 0.42), rgba(26, 33, 29, 0.42)), url("../../assets/images/lab1.webp");
   background-repeat: no-repeat;
   background-size: cover;
   // background-position: right;
   @media (max-width: 768px) {
-    background-image: linear-gradient(rgba(26, 33, 29, 0.42), rgba(26, 33, 29, 0.42)), url("../../assets/images/lab2.jpg");
+    background-image: linear-gradient(rgba(26, 33, 29, 0.42), rgba(26, 33, 29, 0.42)), url("../../assets/images/lab3.webp");
   }
   &__button {
     @include button-transparent;

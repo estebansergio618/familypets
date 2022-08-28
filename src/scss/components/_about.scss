@@ -35,9 +35,9 @@
   }
   &__img {
     min-height: 500px;
-   min-width: 50vw;
+    min-width: 50vw;
     display: block;
-    background-image: url("../../assets/images/cat.jpg");
+    background-image: url("../../assets/images/cat.webp");
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -51,13 +51,12 @@
     flex-direction: column;
     justify-content: space-around;
   }
-   @media (max-width: 768px){
-     &__info {
-       flex-direction: column;
-     }
-     &__right {
-       padding: $main-padding;
-     }
+  @media (max-width: 768px) {
+    &__info {
+      flex-direction: column;
     }
+    &__right {
+      padding: $main-padding;
+    }
+  }
 }
-

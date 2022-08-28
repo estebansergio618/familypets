@@ -1,15 +1,15 @@
 import React from "react";
 import Slider from "react-slick";
-import clubWulf from "../assets/images/clubwuf.png";
-import ncibau from "../assets/images/ncibau.png";
-import ndental from "../assets/images/ndental.png";
-import nfisiovet from "../assets/images/nfisiovet.png";
-import nhills from "../assets/images/nhills.png";
-import nkoning from "../assets/images/nkoning.png";
-import nmio from "../assets/images/nmio.png";
-import npetid from "../assets/images/npetid.png";
-import nvetlife from "../assets/images/nvetlife.png";
-import nvetoch from "../assets/images/nvetoch.png";
+import clubWulf from "../assets/images/clubwuf.webp";
+import ncibau from "../assets/images/ncibau.webp";
+import ndental from "../assets/images/ndental.webp";
+import nfisiovet from "../assets/images/nfisiovet.webp";
+import nhills from "../assets/images/nhills.webp";
+import nkoning from "../assets/images/nkoning.webp";
+import nmio from "../assets/images/nmio.webp";
+import npetid from "../assets/images/npetid.webp";
+import nvetlife from "../assets/images/nvetlife.webp";
+import nvetoch from "../assets/images/nvetoch.webp";
 
 const Brands = () => {
   const settings = {

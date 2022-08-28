@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useState } from "react";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo.webp";
 const PreLoader = () => {
   const [load, setLoad] = useState<number>(0);
   const count = (): void => {
