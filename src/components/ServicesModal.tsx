@@ -27,7 +27,11 @@ export const ServicesModal = ({ card, setOpenModal }: Props) => {
         <p className="servicesmodal__subtitle">El servicio incluye:</p>
         <div className="servicesmodal__subservices-container">
           {card.subservices?.map((service) => (
-            <div className="servicesmodal__subservices" key={service}>
+            <div
+              className="servicesmodal__subservices"
+              style={{ border: `2px solid ${card.color}`, color: card.color }}
+              key={service}
+            >
               <p>{service}</p>
             </div>
           ))}

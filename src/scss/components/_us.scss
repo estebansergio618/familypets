@@ -57,7 +57,7 @@
     float: left;
     shape-outside: circle();
     &-border {
-      border: 20px solid $white;
+      border: 20px solid transparent;
     }
     &-reverse {
       float: right;
