@@ -10,21 +10,32 @@ import Solutions from "../components/Solutions";
 const Home = () => {
   const [preLoading, setPreLoading] = useState<boolean>(false);
   useEffect(() => {
+    // show loader only the first time the page load
+    // Get saved data from sessionStorage
+    const data: string | null = sessionStorage.getItem("firstLoad");
+    // Save data to sessionStorage
+    if (data === "true") return;
+    sessionStorage.setItem("firstLoad", "true");
     setPreLoading(true);
     setTimeout(() => {
       setPreLoading(false);
-    }, 2500);
-  },[]);
+    }, 2000);
+  }, []);
 
   return (
     <>
-      <Hero />
-      <About />
-      <Solutions />
-      <Services />
-      <Brands />
-      <Contact />
-      {preLoading ? <PreLoader /> : null}
+      {preLoading ? (
+        <PreLoader />
+      ) : (
+        <>
+          <Hero />
+          <About />
+          <Solutions />
+          <Services />
+          <Brands />
+          <Contact />
+        </>
+      )}
     </>
   );
 };
