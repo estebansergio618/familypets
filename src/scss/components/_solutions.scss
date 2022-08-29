@@ -19,13 +19,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    min-height: 40vh;
     padding: 10px $main-padding;
     background-image: linear-gradient(
         $transparent-main-color,
         $transparent-main-color
       ),
       url("../../assets/images/pin2.webp");
-    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
   }
