@@ -26,7 +26,7 @@ const Navigation = () => {
       </div>
       <ul className="navigation__nav">
         <li>
-          <a className="navigation__nav-list" href="/#inicio">
+          <a className="navigation__nav-list" href="/familypets#inicio">
             Inicio
           </a>
         </li>
@@ -34,17 +34,17 @@ const Navigation = () => {
           Nosotros
           <ul className="navigation__subnav">
             <li>
-              <a className="navigation__subnav-list" href="/nosotros">
+              <a className="navigation__subnav-list" href="/familypets/nosotros">
                 ¿Quienes Somos?
               </a>
             </li>
             <li>
-              <a className="navigation__subnav-list" href="/nosotros#equipo">
+              <a className="navigation__subnav-list" href="/familypets/nosotros#equipo">
                 Equipo
               </a>
             </li>
             <li>
-              <a className="navigation__subnav-list" href="#servicios">
+              <a className="navigation__subnav-list" href="/familypets#servicios">
                 Servicios
               </a>
             </li>
@@ -52,12 +52,12 @@ const Navigation = () => {
           </ul>
         </li>
         <li>
-          <a className="navigation__nav-list" href="/#contacto">
+          <a className="navigation__nav-list" href="/familypets#contacto">
             Agenda Tu Cita
           </a>
         </li>
         <li>
-          <a className="navigation__nav-list" href="/#contacto">
+          <a className="navigation__nav-list" href="/familypets#contacto">
             Contacto
           </a>
         </li>

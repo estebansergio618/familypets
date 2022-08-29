@@ -13,8 +13,8 @@ function App() {
           <Navigation />
           <Routes>
             <Route path="*" element={<Home />} />
-            <Route path="/" element={<Home />} />
-            <Route path="/nosotros" element={<AboutUs />} />
+            <Route path="/familypets" element={<Home />} />
+            <Route path="/familypets/nosotros" element={<AboutUs />} />
           </Routes>
           <Footer />
         </BrowserRouter>

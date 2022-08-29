@@ -44,7 +44,7 @@ const Solutions = () => {
           <h2 className="solutions__h2">VISÍTANOS JUNTO A TU PEQUEÑO</h2>
           <p>Reserva en segundos</p>
         </div>
-        <a href="#contacto">
+        <a href="/familypets#contacto">
           <button className="solutions__button">AGENDA TU CITA</button>
         </a>
       </div>

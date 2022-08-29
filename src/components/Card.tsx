@@ -71,7 +71,7 @@ const Card = ({ card }: Props) => {
           <p className="servicesextended__card-text">{card.description}</p>
           {card.route ? (
             <a
-              href={card.route}
+              href={`/familypets${card.route}`}
               className="servicesextended__card-button"
               // onClick={() => setOpenModal(true)}
               style={{
@@ -114,7 +114,7 @@ const Card = ({ card }: Props) => {
         <div className="card--mini-right">
           <h4 className="card--mini__title">{card.title}</h4>
           <p className="card--mini__description">{card.description}</p>
-          <a href="/nosotros#servicios">
+          <a href="/familypets/nosotros#servicios">
             <button className="card--mini__button">{card.button}</button>
           </a>
         </div>
@@ -132,7 +132,7 @@ const Card = ({ card }: Props) => {
           <div className="card__bars-bottom" />
         </div>
         <p className="card__description">{card.description}</p>
-        <a href={card.route}>
+        <a href={`/familypets${card.route}`}>
           <button className="card__button">{card.button}</button>
         </a>
       </div>

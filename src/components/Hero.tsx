@@ -15,10 +15,10 @@ const Hero = () => {
       style={{ backgroundPosition: `center ${scrollY / 3}px` }}
       id="inicio"
     >
-      <a href="#contacto">
+      <a href="/familypets#contacto">
         <button className="hero__button hero__button-left">CONTACTO</button>
       </a>
-      <a href="#contacto">
+      <a href="/familypets#contacto">
         <button className="hero__button">AGENDA TU CITA</button>
       </a>
     </div>

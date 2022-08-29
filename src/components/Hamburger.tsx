@@ -48,7 +48,7 @@ const Hamburger = () => {
             <li>
               <a
                 className="hamburger__nav-list"
-                href="/#inicio"
+                href="/familypets#inicio"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Inicio
@@ -75,7 +75,7 @@ const Hamburger = () => {
                   <li>
                     <a
                       className="hamburger__subnav-list"
-                      href="/nosotros"
+                      href="/familypets/nosotros"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       ¿Quienes Somos?
@@ -84,7 +84,7 @@ const Hamburger = () => {
                   <li>
                     <a
                       className="hamburger__subnav-list"
-                      href="/nosotros#equipo"
+                      href="/familypets/nosotros#equipo"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Equipo
@@ -93,7 +93,7 @@ const Hamburger = () => {
                   <li>
                     <a
                       className="hamburger__subnav-list"
-                      href="#servicios"
+                      href="/familypets#servicios"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Servicios
@@ -110,7 +110,7 @@ const Hamburger = () => {
             <li>
               <a
                 className="hamburger__nav-list"
-                href="/#contacto"
+                href="/familypets#contacto"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Agenda Tu Cita
@@ -119,7 +119,7 @@ const Hamburger = () => {
             <li>
               <a
                 className="hamburger__nav-list"
-                href="/#contacto"
+                href="/familypets#contacto"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contacto

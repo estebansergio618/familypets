@@ -84,7 +84,7 @@ const Team = () => {
       </div>
       <div className="team__contact">
         <p className="team__text">¿Quieres formar parte? ¡Contáctanos!</p>
-        <a href="/#contacto">
+        <a href="/familypets#contacto">
         <button className="team__button">CONTACTO</button>
         </a>
       </div>

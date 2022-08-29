@@ -28,7 +28,7 @@ const About = () => {
             salud de sus mascotas y nuestra misión es ofrecer solamente la
             atención de más alto estándar.
           </p>
-          <a href="/nosotros">
+          <a href="/familypets/nosotros">
             <button className="about__button">SABER MÁS</button>
           </a>
         </div>

@@ -36,7 +36,7 @@ export const ServicesModal = ({ card, setOpenModal }: Props) => {
             </div>
           ))}
         </div>
-        <a href="/#contacto">
+        <a href="/familypets#contacto">
           <button className="servicesmodal__button">CONTACTAR</button>
         </a>
       </div>
