@@ -33,6 +33,7 @@
     padding: 20px;
     background-color: $main-color;
     position: relative;
+    border-radius: 5px;
     &::after {
       content: "";
       position: absolute;
@@ -59,6 +60,7 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
+    border-radius: 5px;
     padding: $main-padding;
     background-image: linear-gradient($transparent-white, $transparent-white),
       url("../../assets/images/map.webp");

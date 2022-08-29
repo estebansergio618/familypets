@@ -1,7 +1,24 @@
 .brands {
-
   background-color: $blueberry;
   padding: 30px $main-padding;
+  position: relative;
+  &__separator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    &-svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 59px;
+    }
+    &-fill {
+      fill: #FFFFFF;
+    }
+  }
   &__logo {
     display: block;
     width: 100px;

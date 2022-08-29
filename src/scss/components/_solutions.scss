@@ -8,6 +8,7 @@
     padding: 10px $main-padding;
     height: 150px;
     text-align: center;
+    background-image: linear-gradient(to right, #072042, #082449, #0a2750, #0d2b58, #0f2f5f, #0a3665, #043d6b, #004470, #004e72, #00586f, #00606a, #136763);  
   }
   &__button {
     @include button-white;
