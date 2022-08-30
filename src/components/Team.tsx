@@ -54,7 +54,7 @@ const Team = () => {
             </div>
             <div className="team__card-down">
               <p className="team__card-name">Denís</p>
-              <p className="team__card-role">Médica Veterinaria</p>
+              <p className="team__card-role">Médica Veterinaria CO</p>
             </div>
           </div>
           <div className="team__card">
@@ -66,7 +66,7 @@ const Team = () => {
             </div>
             <div className="team__card-down">
               <p className="team__card-name">Wendy</p>
-              <p className="team__card-role">Gerente</p>
+              <p className="team__card-role">Counter</p>
             </div>
           </div>
           <div className="team__card">
