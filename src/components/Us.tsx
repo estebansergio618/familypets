@@ -16,7 +16,7 @@ const Us = () => {
   window.addEventListener("scroll", changeScroll);
   const [showMore, setShowMore] = useState<boolean>(false);
   return (
-    <section className="us">
+    <section className="us" id="nosotros">
       <div
         className="us__hero"
         ref={parRef}

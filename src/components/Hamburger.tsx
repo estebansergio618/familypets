@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { HashLink } from "react-router-hash-link";
 
 const Hamburger = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -46,13 +47,13 @@ const Hamburger = () => {
               </button>
             </li>
             <li>
-              <a
+              <HashLink
                 className="hamburger__nav-list"
-                href="/familypets#inicio"
+                to="/familypets#inicio"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Inicio
-              </a>
+              </HashLink>
             </li>
             <li
               className="hamburger__nav-list"
@@ -73,31 +74,31 @@ const Hamburger = () => {
               {isAboutUsOpen ? (
                 <ul className="hamburger__subnav">
                   <li>
-                    <a
+                    <HashLink
                       className="hamburger__subnav-list"
-                      href="/familypets/nosotros"
+                      to="/familypets/nosotros#nosotros"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       ¿Quienes Somos?
-                    </a>
+                    </HashLink>
                   </li>
                   <li>
-                    <a
+                    <HashLink
                       className="hamburger__subnav-list"
-                      href="/familypets/nosotros#equipo"
+                      to="/familypets/nosotros#equipo"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Equipo
-                    </a>
+                    </HashLink>
                   </li>
                   <li>
-                    <a
+                    <HashLink
                       className="hamburger__subnav-list"
-                      href="/familypets#servicios"
+                      to="/familypets#servicios"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Servicios
-                    </a>
+                    </HashLink>
                   </li>
                   {/* <li
                     className="hamburger__subnav-list"
@@ -108,22 +109,22 @@ const Hamburger = () => {
               ) : null}
             </li>
             <li>
-              <a
+              <HashLink
                 className="hamburger__nav-list"
-                href="/familypets#contacto"
+                to="/familypets#contacto"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Agenda Tu Cita
-              </a>
+              </HashLink>
             </li>
             <li>
-              <a
+              <HashLink
                 className="hamburger__nav-list"
-                href="/familypets#contacto"
+                to="/familypets#contacto"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contacto
-              </a>
+              </HashLink>
             </li>
             {/* <li
               className="hamburger__nav-list"

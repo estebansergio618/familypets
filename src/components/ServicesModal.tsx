@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 import { CardInterface } from "../types";
 interface Props {
   card: CardInterface;
@@ -36,9 +37,9 @@ export const ServicesModal = ({ card, setOpenModal }: Props) => {
             </div>
           ))}
         </div>
-        <a href="/familypets#contacto">
+        <HashLink to="/familypets#contacto">
           <button className="servicesmodal__button">CONTACTAR</button>
-        </a>
+        </HashLink>
       </div>
     </div>
   );

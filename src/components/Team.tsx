@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 import Slider from "react-slick";
 import den from "../assets/images/denis.webp";
 import mar from "../assets/images/martin.webp";
@@ -84,9 +85,9 @@ const Team = () => {
       </div>
       <div className="team__contact">
         <p className="team__text">¿Quieres formar parte? ¡Contáctanos!</p>
-        <a href="/familypets#contacto">
+        <HashLink to="/familypets#contacto">
         <button className="team__button">CONTACTO</button>
-        </a>
+        </HashLink>
       </div>
     </section>
   );

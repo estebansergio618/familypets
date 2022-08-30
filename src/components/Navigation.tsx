@@ -1,4 +1,6 @@
 import React, {useState } from "react";
+import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import logo from "../assets/images/logo.webp";
 import Hamburger from "./Hamburger";
 const Navigation = () => {
@@ -23,40 +25,40 @@ const Navigation = () => {
       </div>
       <ul className="navigation__nav">
         <li>
-          <a className="navigation__nav-list" href="/familypets#inicio">
+          <HashLink className="navigation__nav-list" to="/familypets#inicio">
             Inicio
-          </a>
+          </HashLink>
         </li>
         <li className="navigation__nav-list navigation__nav-list-sub">
           Nosotros
           <ul className="navigation__subnav">
             <li>
-              <a className="navigation__subnav-list" href="/familypets/nosotros">
+              <HashLink className="navigation__subnav-list" to="/familypets/nosotros#nosotros">
                 ¿Quienes Somos?
-              </a>
+              </HashLink>
             </li>
             <li>
-              <a className="navigation__subnav-list" href="/familypets/nosotros#equipo">
+              <HashLink className="navigation__subnav-list" to="/familypets/nosotros#equipo">
                 Equipo
-              </a>
+              </HashLink>
             </li>
             <li>
-              <a className="navigation__subnav-list" href="/familypets#servicios">
+              <HashLink className="navigation__subnav-list" to="/familypets#servicios">
                 Servicios
-              </a>
+              </HashLink>
             </li>
             {/* <li className="navigation__subnav-list">Blog</li> */}
           </ul>
         </li>
         <li>
-          <a className="navigation__nav-list" href="/familypets#contacto">
+          <HashLink className="navigation__nav-list" to="/familypets#contacto">
             Agenda Tu Cita
-          </a>
+          </HashLink>
         </li>
         <li>
-          <a className="navigation__nav-list" href="/familypets#contacto">
+          <HashLink className="navigation__nav-list" to="/familypets#contacto">
             Contacto
-          </a>
+          </HashLink>
         </li>
         {/* <li className="navigation__nav-list">
           Laboratorio

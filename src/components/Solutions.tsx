@@ -1,6 +1,7 @@
 import { CardInterface } from "../types";
 import Card from "./Card";
 import React, { useRef, useState } from "react";
+import { HashLink } from "react-router-hash-link";
 
 const Solutions = () => {
   const [scrollY, setScrollY] = useState<number>(0);
@@ -44,9 +45,9 @@ const Solutions = () => {
           <h2 className="solutions__h2">VISÍTANOS JUNTO A TU PEQUEÑO</h2>
           <p>Reserva en segundos</p>
         </div>
-        <a href="/familypets#contacto">
+        <HashLink to="/familypets#contacto">
           <button className="solutions__button">AGENDA TU CITA</button>
-        </a>
+        </HashLink>
       </div>
       <div
         className="solutions__content"

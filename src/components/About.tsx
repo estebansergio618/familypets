@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 
 const About = () => {
   return (
@@ -28,9 +29,9 @@ const About = () => {
             salud de sus mascotas y nuestra misión es ofrecer solamente la
             atención de más alto estándar.
           </p>
-          <a href="/familypets/nosotros">
+          <HashLink to="/familypets/nosotros#nosotros">
             <button className="about__button">SABER MÁS</button>
-          </a>
+          </HashLink>
         </div>
       </div>
     </section>

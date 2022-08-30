@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { HashLink } from "react-router-hash-link";
 import { CardInterface } from "../types";
 import { ServicesModal } from "./ServicesModal";
 
@@ -70,8 +71,8 @@ const Card = ({ card }: Props) => {
           </p>
           <p className="servicesextended__card-text">{card.description}</p>
           {card.route ? (
-            <a
-              href={`/familypets${card.route}`}
+            <HashLink
+              to={`/familypets${card.route}`}
               className="servicesextended__card-button"
               // onClick={() => setOpenModal(true)}
               style={{
@@ -81,7 +82,7 @@ const Card = ({ card }: Props) => {
             >
               {card.button ? card.button : "SABER MÁS"}
               {/* <span className="material-symbols-outlined">chevron_right</span> */}
-            </a>
+            </HashLink>
           ) : (
             <button
               className="servicesextended__card-button"
@@ -114,9 +115,9 @@ const Card = ({ card }: Props) => {
         <div className="card--mini-right">
           <h4 className="card--mini__title">{card.title}</h4>
           <p className="card--mini__description">{card.description}</p>
-          <a href="/familypets/nosotros#servicios">
+          <HashLink to="/familypets/nosotros#servicios">
             <button className="card--mini__button">{card.button}</button>
-          </a>
+          </HashLink>
         </div>
       </div>
     );
@@ -132,9 +133,9 @@ const Card = ({ card }: Props) => {
           <div className="card__bars-bottom" />
         </div>
         <p className="card__description">{card.description}</p>
-        <a href={`/familypets${card.route}`}>
+        <HashLink to={`/familypets${card.route}`}>
           <button className="card__button">{card.button}</button>
-        </a>
+        </HashLink>
       </div>
     );
   }

@@ -1,7 +1,7 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
+import { HashLink } from "react-router-hash-link";
 const Hero = () => {
   const [scrollY, setScrollY] = useState<number>(0);
-
 
   const changeScroll = (): void => {
     setScrollY(window.scrollY);
@@ -15,12 +15,12 @@ const Hero = () => {
       style={{ backgroundPosition: `center ${scrollY / 3}px` }}
       id="inicio"
     >
-      <a href="/familypets#contacto">
+      <HashLink to="/familypets#contacto">
         <button className="hero__button hero__button-left">CONTACTO</button>
-      </a>
-      <a href="/familypets#contacto">
+      </HashLink>
+      <HashLink to="/familypets#contacto">
         <button className="hero__button">AGENDA TU CITA</button>
-      </a>
+      </HashLink>
     </div>
   );
 };
