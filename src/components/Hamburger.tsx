@@ -94,7 +94,7 @@ const Hamburger = () => {
                   <li>
                     <HashLink
                       className="hamburger__subnav-list"
-                      to="/familypets#servicios"
+                      to="/familypets/nosotros#servicios"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Servicios

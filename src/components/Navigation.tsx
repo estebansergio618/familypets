@@ -43,7 +43,7 @@ const Navigation = () => {
               </HashLink>
             </li>
             <li>
-              <HashLink className="navigation__subnav-list" to="/familypets#servicios">
+              <HashLink className="navigation__subnav-list" to="/familypets/nosotros#servicios">
                 Servicios
               </HashLink>
             </li>
