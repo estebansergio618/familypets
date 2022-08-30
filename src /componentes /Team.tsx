@@ -54,7 +54,7 @@ const Team = () => {
             </div>
             <div className="team__card-down">
               <p className="team__card-name">Denís</p>
-              <p className="team__card-role">Médica Veterinaria CO</p>
+              <p className="team__card-role">Médica Veterinaria CEO</p>
             </div>
           </div>
           <div className="team__card">
