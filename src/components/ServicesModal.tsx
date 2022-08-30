@@ -6,6 +6,52 @@ interface Props {
   setOpenModal: (value: boolean) => void;
 }
 export const ServicesModal = ({ card, setOpenModal }: Props) => {
+  
+  function perzonalize_message(card_title : string, phone: string) : string{
+    
+    let res : string = '';
+
+    let dog : string = '🐶';
+    let plane : string = '🛫';
+    let fingeprints : string = '🐾';
+    let to_bath : string = '🛁';
+    let house : string = '🏠';
+
+    // THE KEYS CORRESPOND TO CARD.TITLE
+    let dictionary_services : Map<string,string> = new Map();
+    dictionary_services.set('Clínica','Me enteré que tiene el mejor servicio en clínica veterinaria ¿Me dan más información?' + dog + fingeprints);
+    dictionary_services.set('Grooming','Quiero agasajar a mi mascota en su área de grooming ¿Me dan más información?' + to_bath + dog);
+    dictionary_services.set('Hospedaje','Deseo un lugar seguro para mi mascota mientras no estoy con él/ella ¿Me dan más información sobre los servicios de hospedaje?' + dog + house);
+    dictionary_services.set('Traslado','¡Mi mascota se va de viaje! ¿Cómo funciona sus servicios de translado?'+ plane + dog + fingeprints);
+    // dictionary_services.set('ChipID','Estoy interesado en asegurar a mi mascota ¿Cómo funciona su servicio de implantaciónde chips?');
+    // dictionary_services.set('Laboratorio en Línea','Quiero realizar una consulta sobre un examen que ya realizé');
+    
+    // GREETINGS ACCORDING TO THE TIME
+    let today : Date = new Date();
+    let time : Number = today.getHours();
+    
+    if (0<= time && time < 12) {
+      res = 'Buenos dias Family Pets. ';
+    } else if (12 <= time && time < 18) {
+      res = 'Buenas tardes Family Pets. ';
+    } else{
+      res = 'Buenas noches Family Pets. ';
+    }
+
+    // CUSTOMIZE ACCORDING TO THE SERVICE (DEPENDS ON THE CARD TITLE)
+    if (dictionary_services.has(card_title)) {
+      res = res + dictionary_services.get(card.title);    
+    } else{
+      res = 'Me gustaria saber mucho más sobre sus servicios. BUSCA EMOJI FELIZ';
+    }
+
+    return 'https://api.whatsapp.com/send?phone=++51' + phone + '&text=' + res;
+  }
+  
+  function sendWsp(){
+    return window.open(perzonalize_message(card.title,'991854851'));
+  }
+
   return (
     <div className="servicesmodal__background">
       <div className="servicesmodal">
@@ -37,9 +83,7 @@ export const ServicesModal = ({ card, setOpenModal }: Props) => {
             </div>
           ))}
         </div>
-        <HashLink to="/familypets#contacto">
-          <button className="servicesmodal__button">CONTACTAR</button>
-        </HashLink>
+        <button onClick={sendWsp} className="servicesmodal__button">CONTACTAR</button>
       </div>
     </div>
   );
