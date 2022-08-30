@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/familypets/static/css/main.e9c64036.css",
-    "main.js": "/familypets/static/js/main.96780cef.js",
+    "main.js": "/familypets/static/js/main.d3832f36.js",
     "static/media/circlecat2.webp": "/familypets/static/media/circlecat2.08ddb223b4340cbe09f2.webp",
     "static/media/circledog2.webp": "/familypets/static/media/circledog2.2894960cb3437986aeac.webp",
     "static/media/trigo.webp": "/familypets/static/media/trigo.660a61fc603a0e77b580.webp",
@@ -34,10 +34,10 @@
     "static/media/instagram.svg": "/familypets/static/media/instagram.882dbaeadb51a76e68da0e25ebdd40bc.svg",
     "static/media/facebook.svg": "/familypets/static/media/facebook.dd884b95e949a0b04bfe3e5f866f708a.svg",
     "main.e9c64036.css.map": "/familypets/static/css/main.e9c64036.css.map",
-    "main.96780cef.js.map": "/familypets/static/js/main.96780cef.js.map"
+    "main.d3832f36.js.map": "/familypets/static/js/main.d3832f36.js.map"
   },
   "entrypoints": [
     "static/css/main.e9c64036.css",
-    "static/js/main.96780cef.js"
+    "static/js/main.d3832f36.js"
   ]
 }
