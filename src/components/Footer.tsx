@@ -21,7 +21,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="footer__right">
-        <a href="https://es.flyingwoofs.com/" target="_blank">
+        <a href="https://www.wuf.pe/beneficios/flying-woofs" target="_blank">
           <img className="footer__logo" src={clubWulf} alt="club wuf" />
         </a>
       </div>
