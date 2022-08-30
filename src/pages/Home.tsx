@@ -19,23 +19,18 @@ const Home = () => {
     setPreLoading(true);
     setTimeout(() => {
       setPreLoading(false);
-    }, 2000);
+    }, 3000);
   }, []);
 
   return (
     <>
-      {preLoading ? (
-        <PreLoader />
-      ) : (
-        <>
-          <Hero />
-          <About />
-          <Solutions />
-          <Services />
-          <Brands />
-          <Contact />
-        </>
-      )}
+      {preLoading ? <PreLoader /> : null}
+      <Hero />
+      <About />
+      <Solutions />
+      <Services />
+      <Brands />
+      <Contact />
     </>
   );
 };
