@@ -9,38 +9,23 @@ export const ServicesModal = ({ card, setOpenModal }: Props) => {
   function perzonalize_message(card_title: string, phone: string): string {
     let res: string = "";
 
-    let dog: string = "🐶";
-    let plane: string = "🛫";
-    let fingeprints: string = "🐾";
-    let to_bath: string = "🛁";
-    let house: string = "🏠";
-
     // THE KEYS CORRESPOND TO CARD.TITLE
     let dictionary_services: Map<string, string> = new Map();
     dictionary_services.set(
       "Clínica",
-      "Me enteré que tiene el mejor servicio en clínica veterinaria ¿Me dan más información?" +
-        dog +
-        fingeprints
+      "Me enteré que tiene el mejor servicio en clínica veterinaria ¿Me dan más información? 🐶🐾"
     );
     dictionary_services.set(
       "Grooming",
-      "Quiero agasajar a mi mascota en su área de grooming ¿Me dan más información?" +
-        to_bath +
-        dog
+      "Quiero agasajar a mi mascota en su área de grooming ¿Me dan más información? 🐶🛁"
     );
     dictionary_services.set(
       "Hospedaje",
-      "Deseo un lugar seguro para mi mascota mientras no estoy con él/ella ¿Me dan más información sobre los servicios de hospedaje?" +
-        dog +
-        house
+      "Deseo un lugar seguro para mi mascota mientras no estoy con él/ella ¿Me dan más información sobre los servicios de hospedaje? 🐶🏠"
     );
     dictionary_services.set(
       "Traslado",
-      "¡Mi mascota se va de viaje! ¿Cómo funciona sus servicios de translado?" +
-        plane +
-        dog +
-        fingeprints
+      "¡Mi mascota se va de viaje! ¿Cómo funciona sus servicios de translado? 🐶🐾🛫"
     );
     // dictionary_services.set('ChipID','Estoy interesado en asegurar a mi mascota ¿Cómo funciona su servicio de implantaciónde chips?');
     // dictionary_services.set('Laboratorio en Línea','Quiero realizar una consulta sobre un examen que ya realizé');
@@ -62,7 +47,7 @@ export const ServicesModal = ({ card, setOpenModal }: Props) => {
       res = res + dictionary_services.get(card.title);
     } else {
       res =
-        "Me gustaria saber mucho más sobre sus servicios. BUSCA EMOJI FELIZ";
+        "Me gustaria saber mucho más sobre sus servicios 😁 ";
     }
 
     return "https://api.whatsapp.com/send?phone=" + phone + "&text=" + res;
