@@ -26,9 +26,9 @@ const Home = () => {
     <>
       {preLoading ? <PreLoader /> : null}
       <Hero />
+      <ServicesExtended />
       <About />
       <Solutions />
-      <Services />
       <Brands />
       <Contact />
     </>
