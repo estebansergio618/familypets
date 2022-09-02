@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <div
       className="hero"
-      style={{ backgroundPosition: `center ${scrollY / 3}px` }}
+      style={{ backgroundPosition: `center ${(scrollY-30)/10}px` }}
       id="inicio"
     >
       <HashLink to="/familypets#contacto">

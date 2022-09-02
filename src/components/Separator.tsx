@@ -14,7 +14,7 @@ const Separator = () => {
     <div
       className="separator"
       ref={parRef}
-      style={{ backgroundPosition: `center ${scrollY / 3}px` }}
+      style={{ backgroundPosition: `center ${scrollY / 10}px` }}
     >
       <div className="separator__mask" />
     </div>
