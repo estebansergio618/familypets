@@ -31,63 +31,61 @@ export const ReserverModal = () => {
         </div>
 
         {/* BODY RESERVE MODAL */}
+        {/* CLIENT DATA  */}
+        <label htmlFor="name-reserve-modal">Nombre</label>
+        <input type="text" id="name-reserve-modal" ref={nameRef} />
+        <label htmlFor="pet-reserve-modal">Mascota</label>
+        <input type="text" id="pet-reserve-modal" />
+        <label htmlFor="race-reserve-modal">Raza</label>
+        <input type="text" id="race-reserve-modal" />
+
+        {/* APPOINTMENT SCHEDULED FOR THE */}
+        <label htmlFor="date-reserve-modal">Fecha</label>
+        <input type="date" id="date-reserve-modal" />
+        <label htmlFor="hour-reserve-modal">Hora</label>
+        <input type="time" id="hour-reserve-modal" />
+        {/*  ORDERS MATRIX */}
+
+        {/* AREA */}
         <div>
-          {/* CLIENT DATA  */}
-          <label htmlFor="name-reserve-modal">Nombre</label>
-          <input type="text" id="name-reserve-modal" ref={nameRef} />
-          <label htmlFor="pet-reserve-modal">Mascota</label>
-          <input type="text" id="pet-reserve-modal" />
-          <label htmlFor="race-reserve-modal">Raza</label>
-          <input type="text" id="race-reserve-modal" />
+          <p>Area</p>
+          <select name="Lista de pedidos" id="">
+            <option value="">--</option>
+            <option value="">Clínica</option>
+            <option value="">Grooming</option>
+            <option value="">Hospedaje</option>
+          </select>
+        </div>
 
-          {/* APPOINTMENT SCHEDULED FOR THE */}
-          <label htmlFor="date-reserve-modal">Fecha</label>
-          <input type="date" id="date-reserve-modal" />
-          <label htmlFor="hour-reserve-modal">Hora</label>
-          <input type="time" id="hour-reserve-modal" />
-          {/*  ORDERS MATRIX */}
-
-          {/* AREA */}
+        {/* PRODUCTS OF THE CORRESPONDING AREA */}
+        <div>
+          {/* CARGAMOS TODA LA LISTA DE PEDIDOS */}
           <div>
-            <p>Area</p>
+            <p>Descripción</p>
+
+            {/* COMBOX */}
             <select name="Lista de pedidos" id="">
               <option value="">--</option>
-              <option value="">Clínica</option>
-              <option value="">Grooming</option>
-              <option value="">Hospedaje</option>
+              <option value="">three dogs canino 3KG</option>
+            </select>
+
+            {/* BOTONES DE AGREGADO Y ELIMINADO */}
+            <button>Agregar</button>
+            <button>Eliminar</button>
+          </div>
+
+          {/* ALMACENAMOS LOS PEDIDOS SELECCIONADOS POR EL CLIENTE */}
+          <div>
+            <select name="Almacenamiento de pedidos" id="" size={11}>
+              <option value="">1° PEDIDO REALIZADO POR EL CLIENTE</option>
+              <option value="">2° PEDIDO REALIZADO POR EL CLIENTE</option>
             </select>
           </div>
+        </div>
 
-          {/* PRODUCTS OF THE CORRESPONDING AREA */}
-          <div>
-            {/* CARGAMOS TODA LA LISTA DE PEDIDOS */}
-            <div>
-              <p>Descripción</p>
-
-              {/* COMBOX */}
-              <select name="Lista de pedidos" id="">
-                <option value="">--</option>
-                <option value="">three dogs canino 3KG</option>
-              </select>
-
-              {/* BOTONES DE AGREGADO Y ELIMINADO */}
-              <button>Agregar</button>
-              <button>Eliminar</button>
-            </div>
-
-            {/* ALMACENAMOS LOS PEDIDOS SELECCIONADOS POR EL CLIENTE */}
-            <div>
-              <select name="Almacenamiento de pedidos" id="" size={11}>
-                <option value="">1° PEDIDO REALIZADO POR EL CLIENTE</option>
-                <option value="">2° PEDIDO REALIZADO POR EL CLIENTE</option>
-              </select>
-            </div>
-          </div>
-
-          {/* ENVIAR WSP */}
-          <div>
-            <button>ENVIAR</button>
-          </div>
+        {/* ENVIAR WSP */}
+        <div>
+          <button>ENVIAR</button>
         </div>
 
         {/* TERMNS AND CONDITIONS */}

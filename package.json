@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "https://solismatias.github.io/familypets",
   "dependencies": {
-    "@material/textfield": "^14.0.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
