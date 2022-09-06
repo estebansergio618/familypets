@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { HashLink } from "react-router-hash-link";
+import { ReserverModal } from "./ReserverModal";
 const Hero = () => {
   const [scrollY, setScrollY] = useState<number>(0);
+
+  const [show, setShow] = useState<boolean>(false);
+  
 
   const changeScroll = (): void => {
     setScrollY(window.scrollY);
@@ -18,9 +22,9 @@ const Hero = () => {
       <HashLink to="/familypets#contacto">
         <button className="hero__button hero__button-left">CONTACTO</button>
       </HashLink>
-      <HashLink to="/familypets#contacto">
-        <button className="hero__button">AGENDA TU CITA</button>
-      </HashLink>
+      <button onClick={()=>{setShow(true)}} className="hero__button">AGENDA TU CITA</button>
+      {show ? <ReserverModal/> : null}
+
     </div>
   );
 };
