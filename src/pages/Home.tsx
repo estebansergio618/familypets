@@ -5,6 +5,7 @@ import Contact from "../components/Contact";
 import Hero from "../components/Hero";
 import PreLoader from "../components/PreLoader";
 import Services from "../components/Services";
+import ServicesExtended from "../components/ServicesExtended";
 import Solutions from "../components/Solutions";
 
 const Home = () => {
@@ -26,9 +27,9 @@ const Home = () => {
     <>
       {preLoading ? <PreLoader /> : null}
       <Hero />
+      <ServicesExtended />
       <About />
       <Solutions />
-      <Services />
       <Brands />
       <Contact />
     </>

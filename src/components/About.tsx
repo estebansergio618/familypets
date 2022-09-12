@@ -6,7 +6,7 @@ const About = () => {
     <section className="about">
       <div className="about__separator">
         <span className="about__icon material-symbols-outlined">pets</span>
-        <p className="about__title">BIENVENIDO A NUESTRA GRAN FAMILIA</p>
+        <p className="about__title">CONOCE A NUESTRA GRAN FAMILIA</p>
         <p className="about__subtitle">Family Pets</p>
       </div>
       <div className="about__info">

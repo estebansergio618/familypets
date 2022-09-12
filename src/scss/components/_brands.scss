@@ -1,6 +1,7 @@
 .brands {
   background-color: $blueberry;
-  padding: 30px $main-padding;
+  padding: 0 $main-padding;
+  padding-top: 70px;
   position: relative;
   &__separator {
     position: absolute;
@@ -13,7 +14,7 @@
       position: relative;
       display: block;
       width: calc(100% + 1.3px);
-      height: 59px;
+      height: 85px;
     }
     &-fill {
       fill: #FFFFFF;

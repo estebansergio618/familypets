@@ -1,5 +1,12 @@
 .servicesextended{
   padding-bottom: 50px;
+  // .top {
+    // clip-path: polygon(0 0,100% 0,100% 100%,50% calc(100% - 50px),0 100%);
+  // }
+  // .bottom {
+    // clip-path: polygon(0 50px,50% 0,100% 50px,100% 100%,0 100%);
+    // margin-top: -40px;
+  // }
   &__presentation{
     display: flex;
     flex-direction: column;
