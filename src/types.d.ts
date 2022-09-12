@@ -8,3 +8,15 @@ export interface CardInterface {
   route?: string;
   subservices?: string[];
 }
+
+export interface FormInputsInterface {
+  id: string;
+  name: string;
+  type: string;
+  required: boolean;
+  placeholder?: string;
+  options?: string[];
+  min?: string;
+  max?: string;
+  errorMessage?: string;
+}

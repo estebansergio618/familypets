@@ -1,26 +1,65 @@
-.reservermodal{
+.reservermodal {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // align-items: center;
-  // gap: 1rem;
   width: 100%;
-  min-height: 400px;
-  max-width: 500px;
+  max-width: 400px;
+  max-height: 100vh;
   padding: 20px;
+  padding-top: 5px;
   border-radius: 5px;
-  background-color: #f2f2f2;
+  gap: 0.2rem;
+  background-color: $white;
+  overflow: auto;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0 2rem;
+  }
+  &__label {
+    color: $text-gray;
+    font-size: 0.8rem;
+  }
+  &__error {
+    color: red;
+    font-size: 0.8rem;
+  }
+  &__input {
+    // padding: 1.1rem;
+    padding-left: 10px;
+    width: 100%;
+    height: 2.5rem;
+    // &:invalid{
+    //   border: 1px solid red;
+    //   color: red;
+    //   @include horizontal-shake-animation;
+    // }
+    &-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 200px);
+    }
+  }
   &__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.1rem;
+    text-align: center;
+    color: $main-color;
+    font-weight: 600;
   }
   &__close {
     background: none;
     border: none;
-    font-size: 35px;
+    font-size: 2rem;
     font-weight: bold;
+    color: $main-color;
     cursor: pointer;
+  }
+  &__label {
+    margin-top: 5px;
   }
   &__background {
     position: fixed;
@@ -33,5 +72,26 @@
     height: 100vh;
     background-color: $transparent-main-color;
     z-index: 1501;
+  }
+  &__button {
+    @include button-gradient;
+    &--add {
+      border: none;
+      background-color: $emerald;
+      color: $white;
+      width: 30px;
+      height: 30px;
+      border-radius: 3px;
+      align-self: flex-end;
+    }
+  }
+  &__disclaimer {
+    padding: 5px 10px;
+    border: 1px solid $bronze;
+    margin: 15px 0;
+    &-text,
+    &-title {
+      color: $bronze;
+    }
   }
 }

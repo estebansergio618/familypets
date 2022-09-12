@@ -4,7 +4,7 @@ import { ReserverModal } from "./ReserverModal";
 const Hero = () => {
   const [scrollY, setScrollY] = useState<number>(0);
 
-  const [show, setShow] = useState<boolean>(false);
+  const [show, setShow] = useState<boolean>(true);
   
 
   const changeScroll = (): void => {
@@ -23,7 +23,7 @@ const Hero = () => {
         <button className="hero__button hero__button-left">CONTACTO</button>
       </HashLink>
       <button onClick={()=>{setShow(true)}} className="hero__button">AGENDA TU CITA</button>
-      {show ? <ReserverModal/> : null}
+      {show ? <ReserverModal setShow={setShow}/> : null}
 
     </div>
   );
