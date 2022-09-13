@@ -1,0 +1,987 @@
+[
+  {
+     "antiparasitario - antipulgas":[
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"albex",
+           "product_id":"8"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"bravecto 10-20 kg",
+           "product_id":"72"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"bravecto 20-40 kg",
+           "product_id":"73"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"bravecto 2-4.5 kg",
+           "product_id":"74"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"bravecto 4.5-10 kg",
+           "product_id":"75"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"desparasitación",
+           "product_id":"219"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"desparasitación conejo",
+           "product_id":"220"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"meltra",
+           "product_id":"424"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"nexgard 2-4 kg",
+           "product_id":"445"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"nexgard 25-50 kg",
+           "product_id":"446"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"nexgart 4-10 kg",
+           "product_id":"447"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"power spot on 0-4 kg",
+           "product_id":"584"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"power spot on 4-8 kg",
+           "product_id":"585"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"power ultra 11-20 kg",
+           "product_id":"586"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"power ultra 21-40 kg",
+           "product_id":"587"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"power ultra 2-4 kg",
+           "product_id":"588"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"power ultra 41-60 kg",
+           "product_id":"589"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"power ultra 5-10 kg",
+           "product_id":"590"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"revolution 10-20 kg",
+           "product_id":"628"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"revolution 2.5-5 kg",
+           "product_id":"629"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"revolution 5-10 kg",
+           "product_id":"630"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"revolution hasta 2.5 kg",
+           "product_id":"631"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"revolution plus 2.5 - 5.0 kg",
+           "product_id":"632"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"revolution plus 5 - 10kg",
+           "product_id":"633"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"rivolta 2.5-7.5 kg",
+           "product_id":"634"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"simparica 1.3 - 2.5 kg",
+           "product_id":"774"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"simparica 10-20 kg",
+           "product_id":"656"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"simparica 2.5-5 kg",
+           "product_id":"657"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"simparica 20-40 kg",
+           "product_id":"658"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"simparica 5-10 kg",
+           "product_id":"659"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"simparica trio 10 - 20 kg",
+           "product_id":"783"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"simparica trio 2.5 - 5 kg",
+           "product_id":"660"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"simparica trio 20 - 40 kg",
+           "product_id":"661"
+        },
+        {
+           "area":"antiparasitario - antipulgas",
+           "name":"simparica trio 5-10 kg",
+           "product_id":"662"
+        }
+     ]
+  },
+  {
+     "baño y peluqueria":[
+        {
+           "area":"baño y peluqueria",
+           "name":"acondicionador",
+           "product_id":"6"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño acai (pequeño)",
+           "product_id":"749"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño antipulgas (grande)",
+           "product_id":"27"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño antipulgas (mediano)",
+           "product_id":"28"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño antipulgas (pequeño)",
+           "product_id":"29"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño chow chow",
+           "product_id":"30"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño con sanitraz (grande)",
+           "product_id":"31"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño con sanitraz (mediano)",
+           "product_id":"32"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño con sanitraz (pequeño)",
+           "product_id":"33"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño conejo",
+           "product_id":"34"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño extra grande",
+           "product_id":"35"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño gato adulto",
+           "product_id":"36"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño gato bebe",
+           "product_id":"37"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño grande",
+           "product_id":"38"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño keratina (grande)",
+           "product_id":"39"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño keratina (mediano)",
+           "product_id":"40"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño keratina (pequeño)",
+           "product_id":"41"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño mediano",
+           "product_id":"42"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño medicado (grande)",
+           "product_id":"43"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño medicado (mediano)",
+           "product_id":"44"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño medicado (pequeño)",
+           "product_id":"45"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño normal gran danes",
+           "product_id":"46"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño ovejero",
+           "product_id":"47"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño pastor",
+           "product_id":"48"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño pequeño",
+           "product_id":"49"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño samoyedo / siberiano",
+           "product_id":"50"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño tritohexidin (grande)",
+           "product_id":"51"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño tritohexidin (mediano)",
+           "product_id":"52"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño tritohexidin (pequeño)",
+           "product_id":"53"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño tropical acai (grande)",
+           "product_id":"54"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño tropical acai (mediano)",
+           "product_id":"55"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño tropical acai (pequeño)",
+           "product_id":"56"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño tropical pitanga (grande)",
+           "product_id":"57"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño tropical pitanga (mediano)",
+           "product_id":"58"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"baño tropical pitanga (pequeño)",
+           "product_id":"59"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"corte",
+           "product_id":"187"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"corte de uñas",
+           "product_id":"188"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"corte higiénico",
+           "product_id":"189"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"delivery",
+           "product_id":"210"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"delivery lejos",
+           "product_id":"211"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"depilacion de oidos",
+           "product_id":"213"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"desmotado",
+           "product_id":"218"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"hospedaje x dia",
+           "product_id":"342"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"hospedaje x horas",
+           "product_id":"343"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"limado de uñas eléctrico",
+           "product_id":"403"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"limpieza de oídos",
+           "product_id":"407"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"rapado",
+           "product_id":"619"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"retoque de cara",
+           "product_id":"624"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"retoque de patas",
+           "product_id":"625"
+        },
+        {
+           "area":"baño y peluqueria",
+           "name":"tranquilizante",
+           "product_id":"696"
+        }
+     ]
+  },
+  {
+     "examenes":[
+        {
+           "area":"examenes",
+           "name":"ecografia",
+           "product_id":"230"
+        },
+        {
+           "area":"examenes",
+           "name":"radiografia 1 vista",
+           "product_id":"617"
+        },
+        {
+           "area":"examenes",
+           "name":"radiografia 2 vistas",
+           "product_id":"618"
+        },
+        {
+           "area":"examenes",
+           "name":"amilasa",
+           "product_id":"10"
+        },
+        {
+           "area":"examenes",
+           "name":"anticonceptivo",
+           "product_id":"14"
+        },
+        {
+           "area":"examenes",
+           "name":"bioquimica completa",
+           "product_id":"67"
+        },
+        {
+           "area":"examenes",
+           "name":"citologia/biopsia por funcion",
+           "product_id":"147"
+        },
+        {
+           "area":"examenes",
+           "name":"coprologico + antibiograma",
+           "product_id":"182"
+        },
+        {
+           "area":"examenes",
+           "name":"coprologico completo",
+           "product_id":"183"
+        },
+        {
+           "area":"examenes",
+           "name":"coprologico funcional",
+           "product_id":"184"
+        },
+        {
+           "area":"examenes",
+           "name":"coprologico seriado (x3)",
+           "product_id":"185"
+        },
+        {
+           "area":"examenes",
+           "name":"cortisol",
+           "product_id":"190"
+        },
+        {
+           "area":"examenes",
+           "name":"cultivo de bacterias",
+           "product_id":"198"
+        },
+        {
+           "area":"examenes",
+           "name":"descarte sanguineo de distemper",
+           "product_id":"216"
+        },
+        {
+           "area":"examenes",
+           "name":"descarte sanguineo de parvovirus",
+           "product_id":"217"
+        },
+        {
+           "area":"examenes",
+           "name":"electrolitos",
+           "product_id":"232"
+        },
+        {
+           "area":"examenes",
+           "name":"examen coagulacion",
+           "product_id":"254"
+        },
+        {
+           "area":"examenes",
+           "name":"examen tiroideo",
+           "product_id":"255"
+        },
+        {
+           "area":"examenes",
+           "name":"gamma glutamil transpeptidasa (ggtp)",
+           "product_id":"316"
+        },
+        {
+           "area":"examenes",
+           "name":"ggtp",
+           "product_id":"753"
+        },
+        {
+           "area":"examenes",
+           "name":"glucosa",
+           "product_id":"321"
+        },
+        {
+           "area":"examenes",
+           "name":"hemograma completo",
+           "product_id":"328"
+        },
+        {
+           "area":"examenes",
+           "name":"histopalogia",
+           "product_id":"341"
+        },
+        {
+           "area":"examenes",
+           "name":"lipasa",
+           "product_id":"408"
+        },
+        {
+           "area":"examenes",
+           "name":"perfil hepatico",
+           "product_id":"533"
+        },
+        {
+           "area":"examenes",
+           "name":"perfil lipidico",
+           "product_id":"534"
+        },
+        {
+           "area":"examenes",
+           "name":"perfil microbiologico",
+           "product_id":"535"
+        },
+        {
+           "area":"examenes",
+           "name":"perfil pancreatico",
+           "product_id":"536"
+        },
+        {
+           "area":"examenes",
+           "name":"perfil renal",
+           "product_id":"537"
+        },
+        {
+           "area":"examenes",
+           "name":"perfil tiroideo",
+           "product_id":"538"
+        },
+        {
+           "area":"examenes",
+           "name":"pre anestesico",
+           "product_id":"591"
+        },
+        {
+           "area":"examenes",
+           "name":"progesterona",
+           "product_id":"600"
+        },
+        {
+           "area":"examenes",
+           "name":"snap 4dx (descarte de erlichia)",
+           "product_id":"663"
+        },
+        {
+           "area":"examenes",
+           "name":"test distemper",
+           "product_id":"680"
+        },
+        {
+           "area":"examenes",
+           "name":"test leucemia felina",
+           "product_id":"681"
+        },
+        {
+           "area":"examenes",
+           "name":"test parvovirus",
+           "product_id":"682"
+        },
+        {
+           "area":"examenes",
+           "name":"test schirmer",
+           "product_id":"683"
+        },
+        {
+           "area":"examenes",
+           "name":"test sida felina",
+           "product_id":"684"
+        },
+        {
+           "area":"examenes",
+           "name":"tricograma",
+           "product_id":"700"
+        },
+        {
+           "area":"examenes",
+           "name":"tsh",
+           "product_id":"703"
+        },
+        {
+           "area":"examenes",
+           "name":"urea",
+           "product_id":"794"
+        },
+        {
+           "area":"examenes",
+           "name":"urianalisis",
+           "product_id":"704"
+        },
+        {
+           "area":"examenes",
+           "name":"uroanalisis",
+           "product_id":"707"
+        },
+        {
+           "area":"examenes",
+           "name":"urocultivo + antibiograma",
+           "product_id":"708"
+        }
+     ]
+  },
+  {
+     "servicios veterinarios":[
+        {
+           "area":"servicios veterinarios",
+           "name":"abdominocentesis",
+           "product_id":"5"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"administración de medicamentos",
+           "product_id":"7"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"anestesia inhalatoria",
+           "product_id":"11"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"camara uci por hora",
+           "product_id":"107"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"castracion canino/felino",
+           "product_id":"129"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"certificado de salud",
+           "product_id":"133"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"certificado de vacunacion",
+           "product_id":"134"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"chip de identificación",
+           "product_id":"136"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"cistocentesis",
+           "product_id":"146"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"consulta especializada",
+           "product_id":"179"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"consulta general",
+           "product_id":"180"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"consulta noche",
+           "product_id":"181"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"control",
+           "product_id":"797"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"cremacion c/urna de cedro 1.5-5 kg",
+           "product_id":"192"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"cremacion c/urna de cedro 15.1-25 kg",
+           "product_id":"193"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"cremacion c/urna de cedro 25.1-35 kg",
+           "product_id":"194"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"cremacion c/urna de cedro 35.1-50 kg",
+           "product_id":"195"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"cremacion c/urna de cedro 5.1-15 kg",
+           "product_id":"196"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"cremacion c/urna de cedro hasta 1 kg",
+           "product_id":"197"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"curacion",
+           "product_id":"199"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"esterilizacion canino hembra",
+           "product_id":"247"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"esterilizacion felina hembra",
+           "product_id":"784"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"eutanasia",
+           "product_id":"248"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"evaluacion fisiovet",
+           "product_id":"752"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"evaluación terapia fisica",
+           "product_id":"249"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"extraccion de clavos con sedacion",
+           "product_id":"256"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"extraccion de uña sin sedacion",
+           "product_id":"257"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"fluidoterapia",
+           "product_id":"297"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"fluidoterapia / noche",
+           "product_id":"298"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"flushing vesical",
+           "product_id":"299"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"grapa sin sedación",
+           "product_id":"779"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"grapas con sedación",
+           "product_id":"322"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"internamiento x dia",
+           "product_id":"348"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"internamiento x noche",
+           "product_id":"349"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"intervención quirúrgica",
+           "product_id":"350"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"inyeccion 10 - 20 kg",
+           "product_id":"352"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"inyeccion hasta 10kg",
+           "product_id":"353"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"inyección más de 20kg",
+           "product_id":"354"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"manejo de dolor y analgesia en paciente geriátrico",
+           "product_id":"413"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"nebulizacion por hora",
+           "product_id":"442"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"oxigenoterapia por hora",
+           "product_id":"455"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"peritonitis infecciosa felina (pif)",
+           "product_id":"539"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"profilaxis",
+           "product_id":"599"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"punción guiada",
+           "product_id":"613"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"reconstitucion de fluidos",
+           "product_id":"620"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"retiro de grapa sin sedación",
+           "product_id":"786"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"retiro de puntos con sedacion",
+           "product_id":"622"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"retiro de puntos sin sedacion",
+           "product_id":"623"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"sedación",
+           "product_id":"644"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"sedación/noche",
+           "product_id":"645"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"sondaje uretral sin sedacion",
+           "product_id":"668"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"sutura con sedación",
+           "product_id":"673"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"sutura sin sedacion",
+           "product_id":"787"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"terapia fisica",
+           "product_id":"679"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"toracocentesis",
+           "product_id":"796"
+        },
+        {
+           "area":"servicios veterinarios",
+           "name":"vendaje robert jones",
+           "product_id":"712"
+        }
+     ]
+  },
+  {
+     "vacunas":[
+        {
+           "area":"vacunas",
+           "name":"biocan puppy",
+           "product_id":"66"
+        },
+        {
+           "area":"vacunas",
+           "name":"felocell",
+           "product_id":"295"
+        },
+        {
+           "area":"vacunas",
+           "name":"kc",
+           "product_id":"399"
+        },
+        {
+           "area":"vacunas",
+           "name":"leucemia",
+           "product_id":"402"
+        },
+        {
+           "area":"vacunas",
+           "name":"microsporum",
+           "product_id":"430"
+        },
+        {
+           "area":"vacunas",
+           "name":"quintuple",
+           "product_id":"615"
+        },
+        {
+           "area":"vacunas",
+           "name":"rabia",
+           "product_id":"616"
+        },
+        {
+           "area":"vacunas",
+           "name":"sextuple",
+           "product_id":"646"
+        },
+        {
+           "area":"vacunas",
+           "name":"tarjeta de vacunación",
+           "product_id":"782"
+        }
+     ]
+  }
+]
