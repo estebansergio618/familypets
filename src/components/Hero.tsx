@@ -4,7 +4,7 @@ import { ReserverModal } from "./ReserverModal";
 const Hero = () => {
   const [scrollY, setScrollY] = useState<number>(0);
 
-  const [show, setShow] = useState<boolean>(true);
+  const [show, setShow] = useState<boolean>(false);
   
 
   const changeScroll = (): void => {
