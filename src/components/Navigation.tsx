@@ -1,7 +1,8 @@
-import React, {useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
+import { HashLink } from "react-router-hash-link";
 import logo from "../assets/images/logo.webp";
+import { ReserverContext } from "../context/ReserverContext";
 import Hamburger from "./Hamburger";
 const Navigation = () => {
   const [navOnTop, setNavOnTop] = useState<boolean>(true);
@@ -11,6 +12,11 @@ const Navigation = () => {
     } else {
       setNavOnTop(false);
     }
+  };
+
+  const reserverContext = useContext(ReserverContext);
+  const handleShowReserverModal = (): void => {
+    reserverContext?.setShowReserverModal(true);
   };
 
   window.addEventListener("scroll", changeNav);
@@ -33,27 +39,37 @@ const Navigation = () => {
           Nosotros
           <ul className="navigation__subnav">
             <li>
-              <HashLink className="navigation__subnav-list" to="/familypets/nosotros#nosotros">
+              <HashLink
+                className="navigation__subnav-list"
+                to="/familypets/nosotros#nosotros"
+              >
                 ¿Quienes Somos?
               </HashLink>
             </li>
             <li>
-              <HashLink className="navigation__subnav-list" to="/familypets/nosotros#equipo">
+              <HashLink
+                className="navigation__subnav-list"
+                to="/familypets/nosotros#equipo"
+              >
                 Equipo
               </HashLink>
             </li>
             <li>
-              <HashLink className="navigation__subnav-list" to="/familypets/nosotros#servicios">
+              <HashLink
+                className="navigation__subnav-list"
+                to="/familypets/nosotros#servicios"
+              >
                 Servicios
               </HashLink>
             </li>
             {/* <li className="navigation__subnav-list">Blog</li> */}
           </ul>
         </li>
-        <li>
-          <HashLink className="navigation__nav-list" to="/familypets#contacto">
-            Agenda Tu Cita
-          </HashLink>
+        <li
+          onClick={() => handleShowReserverModal()}
+          className="navigation__nav-list"
+        >
+          Agenda Tu Cita
         </li>
         <li>
           <HashLink className="navigation__nav-list" to="/familypets#contacto">

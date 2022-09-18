@@ -1,10 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { HashLink } from "react-router-hash-link";
+import { ReserverContext } from "../context/ReserverContext";
 
 const Hamburger = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const [isAboutUsOpen, setIsAboutUsOpen] = useState<boolean>(false);
   const [isLabOpen, setIsLabOpen] = useState<boolean>(false);
+  const [show, setShow] = useState<boolean>(false);
   const navRef = useRef<HTMLUListElement>(null);
   const handleCloseMenu = (e: any): void => {
     if (
@@ -25,6 +27,11 @@ const Hamburger = () => {
     setIsAboutUsOpen(false);
     setIsLabOpen(false);
   }, []);
+
+  const reserverContext = useContext(ReserverContext);
+  const handleShowReserverModal = (): void => {
+    reserverContext?.setShowReserverModal(true);
+  };
 
   return (
     <div className="hamburger">
@@ -108,14 +115,11 @@ const Hamburger = () => {
                 </ul>
               ) : null}
             </li>
-            <li>
-              <HashLink
-                className="hamburger__nav-list"
-                to="/familypets#contacto"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Agenda Tu Cita
-              </HashLink>
+            <li
+              className="hamburger__nav-list"
+              onClick={() => handleShowReserverModal()}
+            >
+              Agenda Tu Cita
             </li>
             <li>
               <HashLink

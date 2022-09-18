@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
+import { ReserverContext } from "../context/ReserverContext";
 import data from "../utils/reserverJSON.json";
 import { sendWSP } from "../utils/sendWSP";
-interface Props {
-  setShow: (value: boolean) => void;
-}
 
 enum AreaEnum {
   clinica = "Clínica",
@@ -26,7 +24,8 @@ interface FormInputs {
   services: AreasData[];
 }
 
-export const ReserverModal = ({ setShow }: Props) => {
+export const ReserverModal = () => {
+  const reserverContext = useContext(ReserverContext);
   const [search, setSearch] = useState<{ search: string; option: string }>({
     search: "",
     option: "baño y peluqueria",
@@ -121,7 +120,7 @@ export const ReserverModal = ({ setShow }: Props) => {
           <p>RESERVA ONLINE</p>
           <button
             className="reservermodal__close material-symbols-outlined"
-            onClick={() => setShow(false)}
+            onClick={() => reserverContext?.setShowReserverModal(false)}
           >
             close
           </button>
@@ -321,7 +320,6 @@ export const ReserverModal = ({ setShow }: Props) => {
                 </span>
               </span>
             ))}
-
           </fieldset>
           {added.length > 0 ? (
             <fieldset className="reservermodal__search-box">
