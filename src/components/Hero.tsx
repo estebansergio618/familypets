@@ -1,21 +1,18 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import { ReserverContext } from "../context/ReserverContext";
 const Hero = () => {
   const [scrollY, setScrollY] = useState<number>(0);
-
-  const [show, setShow] = useState<boolean>(false);
-  
   const changeScroll = (): void => {
     setScrollY(window.scrollY);
   };
-  
+
   window.addEventListener("scroll", changeScroll);
-  
-  const reserverContext = useContext(ReserverContext)
-  const handleShowReserverModal = ():void => {
-    reserverContext?.setShowReserverModal(true)
-  }
+
+  const reserverContext = useContext(ReserverContext);
+  const handleShowReserverModal = (): void => {
+    reserverContext?.setShowReserverModal(true);
+  };
 
   return (
     <div
@@ -28,7 +25,7 @@ const Hero = () => {
       </HashLink>
       <button
         onClick={() => {
-          handleShowReserverModal()
+          handleShowReserverModal();
         }}
         className="hero__button"
       >

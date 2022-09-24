@@ -62,7 +62,7 @@
     &-reverse {
       float: right;
     }
-    @media (max-width: 400px){
+    @media (max-width: 400px) {
       display: block;
       float: none;
       margin: 0 auto;
@@ -82,4 +82,3 @@
     font-weight: 500;
   }
 }
-

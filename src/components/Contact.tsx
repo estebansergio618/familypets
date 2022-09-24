@@ -1,4 +1,3 @@
-import React from "react";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import wsp from "../assets/icons/whatsapp.svg";
 import fb from "../assets/icons/facebook.svg";
@@ -48,6 +47,7 @@ const Contact = () => {
                 className="contact__social-link"
                 href="https://wa.me/51993485130"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   className="contact__social-logo"
@@ -59,6 +59,7 @@ const Contact = () => {
                 className="contact__social-link"
                 href="https://www.facebook.com/clinicafamilypets/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   className="contact__social-logo"
@@ -70,6 +71,7 @@ const Contact = () => {
                 className="contact__social-link"
                 href="https://instagram.com/vet.familypets?igshid=1d2zjz5s718oj "
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   className="contact__social-logo"

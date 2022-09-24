@@ -1,7 +1,15 @@
-import React from "react";
+import { useLayoutEffect, useState } from "react";
 import { CardInterface } from "../types";
 import Card from "./Card";
 const ServicesExtended = () => {
+  const [sectionID, setSectionID] = useState("");
+  useLayoutEffect(() => {
+    // assign an id after 0,1 seconds page load
+    // because and HashLink issue
+    setTimeout(() => {
+      setSectionID("servicios");
+    }, 100);
+  }, []);
   const outlineCardInfo: CardInterface[] = [
     {
       icon: "healing",
@@ -83,7 +91,7 @@ const ServicesExtended = () => {
         "Nuestro nuevo servicio de implantación de chips te permite identificar a tu mascota globalmente. Los chips de nuestro proveedor petID son de la mejor calidad y están certificados a nivel mundial. ¡La seguridad es primero!",
       color: "#40C989",
       type: "outline",
-      route:"/#contacto",
+      route: "/#contacto",
     },
     {
       icon: "science",
@@ -93,11 +101,11 @@ const ServicesExtended = () => {
       color: "#C98940",
       type: "outline",
       button: "Entrar",
-      route:"/#inicio",
+      route: "/#inicio",
     },
   ];
   return (
-    <section className="servicesextended" id="servicios">
+    <section className="servicesextended" id={sectionID}>
       <div className="servicesextended__presentation">
         <h2 className="servicesextended__h2">Servicios</h2>
         <p className="servicesextended__text">

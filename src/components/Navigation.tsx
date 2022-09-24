@@ -1,5 +1,4 @@
-import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import logo from "../assets/images/logo.webp";
 import { ReserverContext } from "../context/ReserverContext";
@@ -62,7 +61,6 @@ const Navigation = () => {
                 Servicios
               </HashLink>
             </li>
-            {/* <li className="navigation__subnav-list">Blog</li> */}
           </ul>
         </li>
         <li
@@ -76,17 +74,6 @@ const Navigation = () => {
             Contacto
           </HashLink>
         </li>
-        {/* <li className="navigation__nav-list">
-          Laboratorio
-          <ul className="navigation__subnav">
-            <li className="navigation__subnav-list">
-              Registrarse
-            </li>
-            <li className="navigation__subnav-list">
-              Iniciar Sesion
-            </li>
-          </ul>
-        </li> */}
       </ul>
       <Hamburger />
     </nav>

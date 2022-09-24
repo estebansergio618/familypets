@@ -5,7 +5,7 @@
   width: 100%;
   max-width: 400px;
   max-height: 100vh;
-  padding:20px ;
+  padding: 20px;
   padding-top: 5px;
   border-radius: 5px;
   gap: 0.2rem;
@@ -16,7 +16,6 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 0.5rem;
-    // padding: 0 2rem;
     width: 100%;
   }
   &__label {
@@ -39,13 +38,12 @@
     &--custom {
       display: flex;
       align-items: center;
-      // background-color: red;
       border: 1px solid $light-text-gray;
       border-radius: 3px;
       padding-right: 10px;
       width: 100%;
     }
-    &--search{
+    &--search {
       outline: none;
       border: none;
       height: 100%;
@@ -55,14 +53,8 @@
         color: $light-text-gray;
       }
     }
-    // &:invalid{
-    //   border: 1px solid red;
-    //   color: red;
-    //   @include horizontal-shake-animation;
-    // }
     &-container {
       display: grid;
-      // grid-template-columns: repeat(auto-fill, 200px);
       grid-template-columns: 1fr 1fr;
       gap: 0.5rem;
     }
@@ -101,15 +93,6 @@
   }
   &__button {
     @include button-gradient;
-    // &--add {
-    //   border: none;
-    //   background-color: $emerald;
-    //   color: $white;
-    //   width: 30px;
-    //   height: 30px;
-    //   border-radius: 3px;
-    //   align-self: flex-end;
-    // }
   }
   &__disclaimer {
     padding: 5px 10px;
@@ -125,11 +108,8 @@
     align-items: flex-end;
     gap: 0.5rem;
   }
-  &__search{
-    &-box{
-      // border: 1px solid $light-text-gray;
-      // border-radius: 3px;
-      // background-color: aquamarine;
+  &__search {
+    &-box {
       max-height: 150px;
       overflow-y: scroll;
     }
@@ -139,8 +119,6 @@
       justify-content: space-between;
       width: 100%;
       height: 28px;
-      // background-color: red;
-      // padding-left: 10px;
       padding: 0 10px;
       &:nth-child(2n) {
         background-color: rgba(128, 128, 128, 0.2);
@@ -149,7 +127,7 @@
     &-text {
       font-size: 0.9rem;
     }
-    &-add{
+    &-add {
       color: $emerald;
       font-size: rem;
       font-weight: 600;
@@ -164,8 +142,5 @@
       padding: 0 5px;
       margin-left: 5px;
     }
-    // &-fieldset {
-    //   padding-left: 10px;
-    // }
   }
 }

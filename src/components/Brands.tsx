@@ -1,4 +1,3 @@
-import React from "react";
 import Slider from "react-slick";
 import clubWulf from "../assets/images/clubwuf.webp";
 import ncibau from "../assets/images/ncibau.webp";

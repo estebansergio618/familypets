@@ -1,6 +1,6 @@
 import { CardInterface } from "../types";
 import Card from "./Card";
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { HashLink } from "react-router-hash-link";
 
 const Solutions = () => {
@@ -8,7 +8,7 @@ const Solutions = () => {
   const parRef = useRef<HTMLDivElement>(null);
 
   const changeScroll = (): void => {
-    if (parRef.current != undefined && parRef.current != null) {
+    if (parRef.current !== undefined && parRef.current !== null) {
       setScrollY(parRef.current.offsetTop - window.scrollY);
     }
   };

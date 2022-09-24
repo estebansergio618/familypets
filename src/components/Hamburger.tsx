@@ -1,12 +1,10 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import { ReserverContext } from "../context/ReserverContext";
 
 const Hamburger = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const [isAboutUsOpen, setIsAboutUsOpen] = useState<boolean>(false);
-  const [isLabOpen, setIsLabOpen] = useState<boolean>(false);
-  const [show, setShow] = useState<boolean>(false);
   const navRef = useRef<HTMLUListElement>(null);
   const handleCloseMenu = (e: any): void => {
     if (
@@ -19,13 +17,11 @@ const Hamburger = () => {
       navRef.current?.classList.remove("hamburger__nav--closing");
       setIsMenuOpen(false);
       setIsAboutUsOpen(false);
-      setIsLabOpen(false);
     }, 200);
   };
   useEffect(() => {
     setIsMenuOpen(false);
     setIsAboutUsOpen(false);
-    setIsLabOpen(false);
   }, []);
 
   const reserverContext = useContext(ReserverContext);
@@ -107,11 +103,6 @@ const Hamburger = () => {
                       Servicios
                     </HashLink>
                   </li>
-                  {/* <li
-                    className="hamburger__subnav-list"
-                  >
-                    Blog
-                  </li> */}
                 </ul>
               ) : null}
             </li>
@@ -130,38 +121,6 @@ const Hamburger = () => {
                 Contacto
               </HashLink>
             </li>
-            {/* <li
-              className="hamburger__nav-list"
-              onClick={() => setIsLabOpen(!isLabOpen)}
-            >
-              <div className="hamburger__nav-list--title">
-                Laboratorio
-                <span
-                  className={
-                    isLabOpen
-                      ? "hamburger__droplogo hamburger__droplogo--invert material-symbols-outlined"
-                      : "hamburger__droplogo material-symbols-outlined"
-                  }
-                >
-                  arrow_drop_down
-                </span>
-              </div>
-              {isLabOpen ? (
-                <ul className="hamburger__subnav">
-                  <li
-                    className="hamburger__subnav-list"
-                  
-                  >
-                    Registrarse
-                  </li>
-                  <li
-                    className="hamburger__subnav-list"
-                  >
-                    Iniciar Sesion
-                  </li>
-                </ul>
-              ) : null}
-            </li> */}
           </ul>
         </div>
       ) : null}

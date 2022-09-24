@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from "react";
+import  { useLayoutEffect, useState } from "react";
 import logo from "../assets/images/logo.webp";
 const PreLoader = () => {
   const [load, setLoad] = useState<number>(0);
@@ -10,6 +10,7 @@ const PreLoader = () => {
   };
   useLayoutEffect(() => {
     count();
+    // eslint-disable-next-line 
   }, [load]);
 
   return (

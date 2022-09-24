@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import  { useContext, useEffect, useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { ReserverContext } from "../context/ReserverContext";
 import data from "../utils/reserverJSON.json";
@@ -111,6 +111,7 @@ export const ReserverModal = () => {
 
   useEffect(() => {
     handleResults();
+    // eslint-disable-next-line 
   }, [search, added]);
 
   return (

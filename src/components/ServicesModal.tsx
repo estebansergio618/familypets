@@ -1,5 +1,3 @@
-import React from "react";
-import { HashLink } from "react-router-hash-link";
 import { CardInterface } from "../types";
 interface Props {
   card: CardInterface;
@@ -46,8 +44,7 @@ export const ServicesModal = ({ card, setOpenModal }: Props) => {
     if (dictionary_services.has(card_title)) {
       res = res + dictionary_services.get(card.title);
     } else {
-      res =
-        "Me gustaria saber mucho más sobre sus servicios 😁 ";
+      res = "Me gustaria saber mucho más sobre sus servicios 😁 ";
     }
 
     return "https://api.whatsapp.com/send?phone=" + phone + "&text=" + res;

@@ -1,4 +1,4 @@
-import React from "react";
+import { useLayoutEffect, useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import Slider from "react-slick";
 import den from "../assets/images/denis.webp";
@@ -10,6 +10,14 @@ import personal3 from "../assets/images/personal3.webp";
 import personal4 from "../assets/images/personal4.webp";
 import personal5 from "../assets/images/personal5.webp";
 const Team = () => {
+  const [sectionID, setSectionID] = useState("");
+  useLayoutEffect(() => {
+    // assign an id after 0,1 seconds page load
+    // because and HashLink issue
+    setTimeout(() => {
+      setSectionID("equipo");
+    }, 100);
+  }, []);
   const settings = {
     dots: false,
     infinite: true,
@@ -46,7 +54,7 @@ const Team = () => {
       },
     ],
   };
-  const personal:{name:string, role:string, image:string}[] = [
+  const personal: { name: string; role: string; image: string }[] = [
     { name: "Denís", role: "Médica Veterinaria CEO", image: den },
     { name: "Wendy", role: "Administración", image: wen },
     { name: "Martín", role: "Médico Veterinario", image: mar },
@@ -57,7 +65,7 @@ const Team = () => {
     { name: "Lucila", role: "Counter", image: personal5 },
   ];
   return (
-    <section className="team" id="equipo">
+    <section className="team" id={sectionID}>
       <div className="team__presentation">
         <h2 className="team__h2">¡Conoce a Nuestra Familia!</h2>
         <p className="team__text">

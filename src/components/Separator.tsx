@@ -1,11 +1,11 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 const Separator = () => {
   const [scrollY, setScrollY] = useState<number>(0);
   const parRef = useRef<HTMLDivElement>(null);
 
   const changeScroll = (): void => {
-    if (parRef.current != undefined && parRef.current != null) {
+    if (parRef.current !== undefined && parRef.current !== null) {
       setScrollY(parRef.current.offsetTop - window.scrollY);
     }
   };

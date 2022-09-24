@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import circleDog from "../assets/images/circledog.webp";
 import circleDog2 from "../assets/images/circledog2.webp";
 import circleCat from "../assets/images/circlecat.webp";
@@ -9,7 +9,7 @@ const Us = () => {
   const parRef = useRef<HTMLDivElement>(null);
 
   const changeScroll = (): void => {
-    if (parRef.current != undefined && parRef.current != null) {
+    if (parRef.current !== undefined && parRef.current !== null) {
       setScrollY(parRef.current.offsetTop - window.scrollY);
     }
   };
@@ -33,7 +33,6 @@ const Us = () => {
       </div>
       <div className="us__values">
         <div className="us__card">
-          {/* <div className="us__info"> */}
           <h3 className="us__h2">Misión</h3>
           <img className="us__image" src={circleDog} alt="dog" />
           <p className="us__text">
@@ -43,10 +42,8 @@ const Us = () => {
             servicios complementarios en un mismo lugar para mayor seguridad y
             satisfacción del cliente.
           </p>
-          {/* </div> */}
         </div>
         <div className="us__card">
-          {/* <div className="us__info"> */}
           <h3 className="us__h2">Visión</h3>
           <img
             className="us__image us__image-reverse"
@@ -60,12 +57,14 @@ const Us = () => {
             mayor y mejor servicio a nuestras mascotas y ayudando a sus dueños a
             darles mejores cuidados y recomendaciones
           </p>
-          {/* </div> */}
         </div>
         <div className="us__card">
-          {/* <div className="us__info"> */}
           <h3 className="us__h2">Valores</h3>
-          <img className="us__image us__image-border" src={circleDog2} alt="dog" />
+          <img
+            className="us__image us__image-border"
+            src={circleDog2}
+            alt="dog"
+          />
           <p className={showMore ? "us__text" : "us__text us__text--overflow"}>
             Los valores éticos y profesionales son muy importante para nosotros
             entre los que podemos mencionar: <br />
@@ -109,10 +108,8 @@ const Us = () => {
               <span className="material-symbols-outlined">expand_more</span>
             </button>
           )}
-          {/* </div> */}
         </div>
         <div className="us__card">
-          {/* <div className="us__info"> */}
           <h3 className="us__h2">Política de calidad</h3>
           <img
             className="us__image us__image-reverse us__image-border"
@@ -133,7 +130,6 @@ const Us = () => {
             animales enfermos.
           </p>
           <p className="us__text">🐾 Cordialidad y comprensión</p>
-          {/* </div> */}
         </div>
       </div>
     </section>
