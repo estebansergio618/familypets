@@ -2,7 +2,7 @@
   "name": "familypets",
   "version": "0.1.2",
   "private": true,
-  "homepage": "https://estebansergio618.github.io/familypets",
+  "homepage": "https://familypets.pe",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
