@@ -6,7 +6,7 @@ const Footer = () => {
         <p className="footer__text">Datos de Contacto</p>
         <a
           className="footer__link"
-          href="https://wa.me/51937871113"
+          href="https://wa.me/51993485130"
           target="_blank"
           rel="noreferrer"
         >

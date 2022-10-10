@@ -80,7 +80,7 @@ export const sendWSP = (data: FormInputs): void => {
     });
   }
   window.open(
-    `https://api.whatsapp.com/send?phone=1162353123&text=${
+    `https://api.whatsapp.com/send?phone=51993485130&text=${
       greeting + message + servicesMessage + final
     }`,
     "_blank"
