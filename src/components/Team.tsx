@@ -60,8 +60,8 @@ const Team = () => {
     { name: "Martín", role: "Médico Veterinario", image: mar },
     { name: "Leslie", role: "Practicante Veterinaria", image: personal1 },
     { name: "Josué Z.", role: "Grooming", image: personal2 },
-    { name: "Jonathan ", role: "Grooming", image: personal3 },
-    { name: "Luis", role: "Delivery", image: personal4 },
+    //{ name: "Jonathan ", role: "Grooming", image: personal3 },
+    //{ name: "Luis", role: "Delivery", image: personal4 },
     { name: "Lucila", role: "Counter", image: personal5 },
   ];
   return (
