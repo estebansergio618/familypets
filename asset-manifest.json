@@ -1,14 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.4ce98a3f.css",
-    "main.js": "/static/js/main.381249b4.js",
-    "static/media/personal5.webp": "/static/media/personal5.604845ef544c112911b3.webp",
-    "static/media/personal1.webp": "/static/media/personal1.ebd07e34bd19b72d9521.webp",
-    "static/media/personal2.webp": "/static/media/personal2.378d91fdd368106dafa3.webp",
+    "main.css": "/static/css/main.ad8b71f7.css",
+    "main.js": "/static/js/main.dec8e48b.js",
+    "static/media/operacion.png": "/static/media/operacion.a09242027d20394820c5.png",
     "static/media/circlecat2.webp": "/static/media/circlecat2.08ddb223b4340cbe09f2.webp",
     "static/media/circledog2.webp": "/static/media/circledog2.2894960cb3437986aeac.webp",
     "static/media/trigo.webp": "/static/media/trigo.660a61fc603a0e77b580.webp",
-    "static/media/cat.webp": "/static/media/cat.721ef2ff2a347a9f1dc1.webp",
     "static/media/pin2.webp": "/static/media/pin2.858998ebb5387629b906.webp",
     "static/media/bg-map.webp": "/static/media/bg-map.faa13080481f09a3b9d2.webp",
     "static/media/lab3.webp": "/static/media/lab3.2260a758bab24ccd23a3.webp",
@@ -36,11 +33,11 @@
     "static/media/whatsapp.svg": "/static/media/whatsapp.22bb12a038db478cef5ac8e4020fab1e.svg",
     "static/media/instagram.svg": "/static/media/instagram.882dbaeadb51a76e68da0e25ebdd40bc.svg",
     "static/media/facebook.svg": "/static/media/facebook.dd884b95e949a0b04bfe3e5f866f708a.svg",
-    "main.4ce98a3f.css.map": "/static/css/main.4ce98a3f.css.map",
-    "main.381249b4.js.map": "/static/js/main.381249b4.js.map"
+    "main.ad8b71f7.css.map": "/static/css/main.ad8b71f7.css.map",
+    "main.dec8e48b.js.map": "/static/js/main.dec8e48b.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ce98a3f.css",
-    "static/js/main.381249b4.js"
+    "static/css/main.ad8b71f7.css",
+    "static/js/main.dec8e48b.js"
   ]
 }
