@@ -8,7 +8,7 @@ const AboutUs = () => {
   return (
     <>
     <Us/>
-    <Separator/>
+    {/* <Separator/> */}
     <Team/>
     <ServicesExtended/>
     </>

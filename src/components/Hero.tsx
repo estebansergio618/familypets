@@ -11,7 +11,8 @@ const Hero = () => {
 
   const reserverContext = useContext(ReserverContext);
   const handleShowReserverModal = (): void => {
-    reserverContext?.setShowReserverModal(true);
+    // reserverContext?.setShowReserverModal(true);
+    alert("Muy pronto podras contar con esta opción 🐑");
   };
 
   return (

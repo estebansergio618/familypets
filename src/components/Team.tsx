@@ -55,14 +55,14 @@ const Team = () => {
     ],
   };
   const personal: { name: string; role: string; image: string }[] = [
-    { name: "Denís", role: "Médica Veterinaria CEO", image: den },
+    { name: "Denís", role: "Médica Veterinaria", image: den },
     { name: "Wendy", role: "Administración", image: wen },
     { name: "Martín", role: "Médico Veterinario", image: mar },
-    { name: "Leslie", role: "Practicante Veterinaria", image: personal1 },
-    { name: "Josué Z.", role: "Grooming", image: personal2 },
+    // { name: "Leslie", role: "Practicante Veterinaria", image: personal1 },
+    // { name: "Josué Z.", role: "Grooming", image: personal2 },
     //{ name: "Jonathan ", role: "Grooming", image: personal3 },
     //{ name: "Luis", role: "Delivery", image: personal4 },
-    { name: "Lucila", role: "Counter", image: personal5 },
+    // { name: "Lucila", role: "Counter", image: personal5 },
   ];
   return (
     <section className="team" id={sectionID}>
