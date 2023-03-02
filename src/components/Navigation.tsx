@@ -64,7 +64,7 @@ const Navigation = () => {
           </ul>
         </li>
         <li
-          onClick={() => handleShowReserverModal()}
+          onClick={() => alert("Muy pronto podras contar con esta opción 🐑")}
           className="navigation__nav-list"
         >
           Agenda Tu Cita

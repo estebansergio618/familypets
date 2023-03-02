@@ -108,7 +108,7 @@ const Hamburger = () => {
             </li>
             <li
               className="hamburger__nav-list"
-              onClick={() => handleShowReserverModal()}
+              onClick={() => alert("Muy pronto podras contar con esta opción 🐑")}
             >
               Agenda Tu Cita
             </li>
